@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo/sell4me.png" type="image/x-icon">
+    <link rel="stylesheet" href="swiperjs_files/swiper-bundle.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="tailwind.css">
+    <title>Shop4me stock</title>
+</head>
+<body>
+    <div class="dialog">
+        <dialog id="login-dialog">
+            <button>Cancel</button>
+            <form action="#" class="signup_or_login">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password">
+                </div>
+                <input type="submit" value="Login" class="dialog-submit">
+    
+                <a href="#" class="forgot-password">Forgot Password</a>
+                <p>Don't have an account? <a href="#">sign up</a></p>
+            </form>
+        </dialog>
+        <dialog id="signup-dialog">
+            <button>Cancel</button>
+            <form action="#" class="signup_or_login">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <span>*password must be at least 6 caracters and must contain letter and number</span>
+                    <input type="password" name="password">
+                </div>
+                <div>
+                    <label for="password">Confirm password</label>
+                    <input type="password" name="password">
+                </div>
+                <input type="submit" value="Sign Up" class="dialog-submit">
+    
+                <p>Already have an account? <a href="#">Login</a></p>
+            </form>
+        </dialog>
+        <dialog id="reset-dialog">
+            <form action="#" class="signup_or_login">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <input type="submit" value="Reset password" class="dialog-submit">
+    
+                <a href="#">&larr; Login with new passward</a>
+            </form>
+        </dialog>
+    </div>
+
+    <header class="top-header stock">
+        <h1><a href="index.html">SELL4ME</a></h1>
+        <div class="hamburger">
+            <div class="hamburger-btn"></div>
+        </div> 
+        <nav class="menu">
+            <a href="index.html">home</a>
+            <a href="how_it_works.html">How it Works</a>
+            <a href="#" class="active">View Stocks</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="contact_us.html">Contact Us</a> 
+            
+            <div class="login">
+                <a href="#">Sign up</a>
+                <a href="#">Log in</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="items">
+        <div class="search">
+            <select name="items" id="items">
+                <option value="">Select item Category</option>
+                <option value="wrist-watch">wrist-watch</option>
+                <option value="foot-wear">foot-wear</option>
+                <option value="clothing">clothings</option>
+                <option value="appliance">appliances</option>
+                <option value="gaming">Gaming</option>
+            </select>
+        </div>
+
+        
+        <section class="item-category">
+            <h2 class="category-title">Foot wears</h2>
+
+            <div class="card-container mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- CARDS GO HERE -->
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/foot-wear/img5.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div  class="img-container">
+                            <img src="stock_images/foot-wear/img2.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/foot-wear/img1.jpg" alt="watch image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/foot-wear/img3.jpg" alt="watch image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/foot-wear/img4.jpg" alt="watch image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/foot-wear/img6.jpg" alt="watch image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar progress-bar"></div>
+            </div>
+
+            <a href="#" class="load-more">SEE ALL</a>
+        </section>
+        <section class="item-category">
+            <h2 class="category-title">Wrist watches</h2>
+
+            <div class="card-container mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- CARDS GO HERE -->
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/wrist-watch/img1.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/wrist-watch/img2.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/wrist-watch/img3.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/wrist-watch/img4.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/wrist-watch/img5.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/wrist-watch/img6.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <a href="#" class="load-more">SEE ALL</a>
+        </section>
+        <section class="item-category">
+            <h2 class="category-title">Clothings</h2>
+
+            <div class="card-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/clothing/img2.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/clothing/img4.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/clothing/img3.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/clothing/img1.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/clothing/img5.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/clothing/img6.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <a href="#" class="load-more">SEE ALL</a>
+        </section>
+        <section class="item-category">
+            <h2 class="category-title">Appliances</h2>
+
+            <div class="card-container mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- CARDS GO HERE -->
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/appliance/img1.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/appliance/img2.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/appliance/img3.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/appliance/img4.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <a href="#" class="load-more">SEE ALL</a>
+        </section>
+        <section class="item-category">
+            <h2 class="category-title">Gaming</h2>
+
+            <div class="card-container mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- CARDS GO HERE -->
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/gaming/img2.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/gaming/img5.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/gaming/img3.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/gaming/img4.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="price-tag">N7,000.00</div>
+                        <img src="imgs/verified-secondary.png" alt="" class="product-verification-badge">
+                        <div class="img-container">
+                            <img src="stock_images/gaming/img1.jpg" alt="watch image" class="product-image">
+                        </div>
+                        <div class="item-detail">
+                            <span class="item-name">rolex mini watch</span>
+                            <div class="product-poster">
+                                <span>Posted by <a>tolu Makinwa</a></span>
+                                <!-- <img src="imgs/woman-removebg-preview.png" class="w-10 rounded-full" alt=""> -->
+                            </div>
+                            <span class="upload-time">1 week ago</span>
+                            <a class="buy-btn">VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <a href="#" class="load-more">SEE ALL</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="borderline"></div>
+        <div class="socials">
+            <div><i class="fa-brands fa-facebook-f"></i></div>
+            <div><i class="fa-brands fa-twitter"></i></div>
+            <div><i class="fa-brands fa-tiktok"></i></div>
+        </div>
+    </footer>
+
+
+
+    <script src="swiperjs_files/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ee554a58a8.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

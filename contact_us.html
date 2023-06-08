@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo/sell4me.png" type="image/x-icon">
+    <!-- boxicon css -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="scss/style.css">
+    <title>how it works</title>
+</head>
+<body>
+    <div class="dialog">
+        <dialog id="login-dialog">
+            <button>Cancel</button>
+            <form action="#" class="signup_or_login">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password">
+                </div>
+                <input type="submit" value="Login" class="dialog-submit">
+    
+                <a href="#" class="forgot-password">Forgot Password</a>
+                <p>Don't have an account? <a href="#">sign up</a></p>
+            </form>
+        </dialog>
+        <dialog id="signup-dialog">
+            <button>Cancel</button>
+            <form action="#" class="signup_or_login">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <span>*password must be at least 6 caracters and must contain letter and number</span>
+                    <input type="password" name="password">
+                </div>
+                <div>
+                    <label for="password">Confirm password</label>
+                    <input type="password" name="password">
+                </div>
+                <input type="submit" value="Sign Up" class="dialog-submit">
+    
+                <p>Already have an account? <a href="#">Login</a></p>
+            </form>
+        </dialog>
+        <dialog id="reset-dialog">
+            <form action="#" class="signup_or_login">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <input type="submit" value="Reset password" class="dialog-submit">
+    
+                <a href="#">&larr; Login with new passward</a>
+            </form>
+        </dialog>
+    </div>
+    
+    <header class="top-header">
+        <h1><a href="index.html">SELL4ME</a></h1>
+        <div class="hamburger">
+            <div class="hamburger-btn"></div>
+        </div> 
+        <nav class="menu">
+            <a href="index.html">home</a>
+            <a href="how_it_works.html">How it Works</a>
+            <a href="stock.html">View Stocks</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="#" class="active">Contact Us</a> 
+            
+            <div class="login">
+                <a href="#">Sign up</a>
+                <a href="#">Log in</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-section">
+        <div class="form-container">
+            <h2 class="form-header">Send us a mail</h2>
+    
+            <form action="#">
+                <section  class="float-left">
+                    <label for="first-name"></label>
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                </section>
+    
+                <section class="float-right">
+                    <label for="last-name"></label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                </section>
+                
+                <section>
+                    <label for="email" class="input"></label>
+                    <input type="email" name="email" id="email" placeholder="Email Adress">
+                </section>
+    
+                <section class="message">
+                    <label for="message" class="input">Write your message</label>
+                    <input type="text" for="message" id="message">
+                </section>
+    
+                <button type="submit" class="submit">SEND</button>
+    
+            </form>
+        </div>
+        <span class="callcare"><i class='bx bx-phone'></i>Call care: 08099392992</span>
+    </main>
+
+    <footer>
+        <div class="borderline"></div>
+        <div class="socials">
+            <div><i class="fa-brands fa-facebook-f"></i></div>
+            <div><i class="fa-brands fa-twitter"></i></div>
+            <div><i class="fa-brands fa-tiktok"></i></div>
+        </div>
+    </footer>
+
+
+<script src="https://kit.fontawesome.com/ee554a58a8.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>

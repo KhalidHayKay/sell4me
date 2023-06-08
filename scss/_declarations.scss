@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+$primary-color: rgb(5, 20, 35);
+$secondary-color: rgb(20, 205, 205);
+
+@mixin transition {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin burgerBtnStyle($width: 100%) {
+    position: absolute;
+    height: 3px;
+    width: $width;
+    border-radius: 10px;
+    background-color: $secondary-color;
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin login_h3style($divColoring: $primary-color){
+    border: 1px solid $divColoring;
+    color: $divColoring;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+@mixin mediaQuery($screenSize) {
+    @media only screen and (min-width: $screenSize){
+        @content;
+    }
+}

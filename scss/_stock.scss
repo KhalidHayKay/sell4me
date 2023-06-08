@@ -1,0 +1,47 @@
+// <main> style is being inherited from the scss root style (scss/style.css)
+
+.items {
+    padding: 80px 0 0;
+    height: fit-content;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+
+    select {
+        background-color: $secondary-color;
+        width: 90%;
+        border-radius: 20px;
+        padding: 5px;
+        outline-color: $primary-color;
+    
+        option {
+            width: 50%;
+            align-self: center;
+
+            &:nth-child(1) {
+                font-size: small;
+            }
+        }
+    }
+}
+
+.product-verification-badge {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: $secondary-color;
+    width: 15px;
+}
+
+
+
+.swiper-scrollbar {
+    background-color: rgba(20, 205, 205, 0.1);
+}
+.swiper-scrollbar-drag {
+    background-color: rgba(20, 205, 205, 0.4);
+}
