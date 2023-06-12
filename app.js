@@ -65,7 +65,7 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
-        clickable: 'ture',
+        clickable: 'true',
       },
     scrollbar: {
         el: '.swiper-scrollbar',

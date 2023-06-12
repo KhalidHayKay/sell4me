@@ -7,8 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-$primary-color: rgb(5, 20, 35);
-$secondary-color: rgb(20, 205, 205);
+// $primary-color: rgb(5, 20, 35);
+// $secondary-color: rgb(20, 205, 205);
+$primary-color: #F0FFF3;
+$secondary-color: rgb(5, 20, 35);
 
 @mixin transition {
     transition: all 0.5s ease-in-out;
@@ -33,8 +35,8 @@ $secondary-color: rgb(20, 205, 205);
     text-decoration: none;
 }
 
-@mixin mediaQuery($screenSize) {
-    @media only screen and (min-width: $screenSize){
+@mixin mediaQuery($widthOrHeight, $screenSize) {
+    @media only screen and ($widthOrHeight: $screenSize){
         @content;
     }
 }
