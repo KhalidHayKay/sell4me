@@ -13,7 +13,7 @@ header.top-header {
   padding: 15px 20px;
   overflow-x: hidden;
   background: transparent;
-  border-bottom: 3px solid rgb(20, 205, 205);
+  border-bottom: 3px solid rgb(5, 20, 35);
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
   z-index: 2;
@@ -23,13 +23,13 @@ header.top-header h1 {
 }
 header.top-header h1 a {
   text-decoration: none;
-  color: rgb(20, 205, 205);
+  color: rgb(5, 20, 35);
 }
 
 .how-it-works_section {
   position: relative;
-  height: 160vh;
-  background: linear-gradient(to bottom, rgb(5, 20, 35), rgba(20, 205, 205, 0.142));
+  height: 130vh;
+  background: linear-gradient(to bottom, #F0FFF3, rgba(20, 205, 205, 0.142));
   display: grid;
   grid-template-areas: "text";
 }
@@ -43,6 +43,16 @@ header.top-header h1 a {
   opacity: 0.3;
 }
 
+@media only screen and (max-height: 640px) {
+  .how-it-works_section {
+    height: 150vh;
+  }
+}
+@media only screen and (max-height: 540px) {
+  .how-it-works_section {
+    height: 160vh;
+  }
+}
 .how-it-works {
   position: absolute;
   padding-top: 50px;
@@ -52,7 +62,7 @@ header.top-header h1 a {
   flex-direction: column;
   gap: 10px;
   justify-content: center;
-  color: rgb(20, 205, 205);
+  color: rgb(5, 20, 35);
   opacity: 0.95;
 }
 .how-it-works h3 {
@@ -81,12 +91,12 @@ header.top-header h1 a {
 }
 .how-it-works a {
   text-decoration: none;
-  background-color: rgb(5, 20, 35);
-  color: rgb(20, 205, 205);
+  background-color: #F0FFF3;
+  color: rgb(5, 20, 35);
   font-size: 16px;
   margin: 10px auto 0;
   padding: 4px;
-  border: 1px solid rgb(20, 205, 205);
+  border: 1px solid rgb(5, 20, 35);
   border-radius: 20px;
 }
 
@@ -98,7 +108,7 @@ header.top-header h1 a {
   font-family: monospace;
 }
 .contact-section .callcare {
-  color: rgb(20, 205, 205);
+  color: rgb(5, 20, 35);
   font-size: 14px;
   margin: 20px;
   display: flex;
@@ -107,7 +117,7 @@ header.top-header h1 a {
 }
 
 .form-container {
-  background: rgb(20, 205, 205);
+  background: rgb(5, 20, 35);
   width: 90%;
   padding: 25px;
   margin-top: 100px;
@@ -117,40 +127,40 @@ header.top-header h1 a {
   font-size: 25px;
   text-align: center;
   margin: 0 0 10px 0;
-  color: rgb(5, 20, 35);
+  color: #F0FFF3;
 }
 
 .contact-section input {
   width: 100%;
   background-color: transparent;
   border: none;
-  border-bottom: solid 1px rgb(5, 20, 35);
+  border-bottom: solid 1px #F0FFF3;
   padding: 25px 0 8px 0;
   outline: none;
 }
 .contact-section input:focus {
-  border-color: rgb(20, 90, 120);
+  border-color: #11CBD7;
   transition: 0.2s;
 }
 .contact-section input:focus::-moz-placeholder {
-  color: rgb(20, 90, 120);
+  color: #11CBD7;
   transform: translateY(-12px);
 }
 .contact-section input:focus::placeholder {
-  color: rgb(20, 90, 120);
+  color: #11CBD7;
   transform: translateY(-12px);
 }
 .contact-section input::-moz-placeholder {
   font-size: 14px;
   font-family: monospace;
-  color: black;
+  color: #F0FFF3;
   -moz-transition: 0.2s;
   transition: 0.2s;
 }
 .contact-section input::placeholder {
   font-size: 14px;
   font-family: monospace;
-  color: black;
+  color: #F0FFF3;
   transition: 0.2s;
 }
 .contact-section input[for=message] {
@@ -169,14 +179,16 @@ header.top-header h1 a {
 
 .message {
   margin: 20px 0;
+  color: #F0FFF3;
 }
 
 .submit {
   width: 40%;
   border: none;
   padding: 7px 0;
-  background: linear-gradient(to right, rgb(140, 210, 240), rgb(5, 20, 35));
-  color: white;
+  background: linear-gradient(to right, rgb(140, 210, 240), #F0FFF3);
+  color: rgb(5, 20, 35);
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -193,11 +205,11 @@ header.top-header h1 a {
   margin: 30px 0;
 }
 .search select {
-  background-color: rgb(20, 205, 205);
+  background-color: rgb(5, 20, 35);
   width: 90%;
   border-radius: 20px;
   padding: 5px;
-  outline-color: rgb(5, 20, 35);
+  outline-color: #F0FFF3;
 }
 .search select option {
   width: 50%;
@@ -211,7 +223,7 @@ header.top-header h1 a {
   position: absolute;
   top: 5px;
   right: 10px;
-  color: rgb(20, 205, 205);
+  color: rgb(5, 20, 35);
   width: 15px;
 }
 
@@ -227,7 +239,7 @@ header.top-header h1 a {
   padding-top: 80px;
   height: -moz-fit-content;
   height: fit-content;
-  background: linear-gradient(to bottom, rgb(5, 20, 35), rgba(20, 205, 205, 0.3));
+  background: linear-gradient(to bottom, #F0FFF3, rgba(20, 205, 205, 0.3));
 }
 
 .testimonial-container {
@@ -238,11 +250,11 @@ header.top-header h1 a {
   align-items: center;
 }
 .testimonial-container h2 {
-  color: rgb(20, 205, 205);
+  color: rgb(5, 20, 35);
   font-size: 18px;
   text-align: center;
   width: 100%;
-  border-bottom: solid 2px rgb(5, 20, 35);
+  border-bottom: solid 2px #F0FFF3;
   padding-bottom: 5px;
 }
 
@@ -271,11 +283,11 @@ header.top-header h1 a {
   padding: 0 10px;
   font-size: 12px;
   font-weight: 500;
-  color: rgb(20, 205, 205);
+  color: rgb(5, 20, 35);
 }
 .testimonial .slide i {
   font-size: 20px;
-  color: rgb(20, 205, 205);
+  color: rgb(5, 20, 35);
 }
 
 .detail {
@@ -283,7 +295,7 @@ header.top-header h1 a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(20, 205, 205);
+  color: rgb(5, 20, 35);
 }
 .detail .name {
   font-size: 12px;
@@ -299,18 +311,18 @@ header.top-header h1 a {
 }
 
 .swiper-pagination-bullet {
-  background-color: rgba(20, 205, 205, 0.7);
+  background-color: #11CBD7;
   transform: translateY(10px);
 }
 
 .swiper-pagination-bullet-active {
-  background-color: rgb(20, 205, 205);
+  background-color: rgb(5, 20, 35);
 }
 
 .review {
   padding: 30px 20px;
-  color: rgb(20, 205, 205);
-  border-top: 1px solid rgb(5, 20, 35);
+  color: rgb(5, 20, 35);
+  border-top: 1px solid #F0FFF3;
 }
 .review textarea, .review input {
   width: 100%;
@@ -329,8 +341,8 @@ header.top-header h1 a {
 }
 .review .send-btn {
   border: none;
-  background-color: rgb(5, 20, 35);
-  color: rgb(20, 205, 205);
+  background-color: #F0FFF3;
+  color: rgb(5, 20, 35);
   font-size: 25px;
   padding: 3px 12px;
 }
@@ -346,15 +358,15 @@ dialog button {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: rgb(20, 205, 205);
+  background-color: rgb(5, 20, 35);
   padding: 2px;
   font-size: 11px;
   font-weight: bold;
 }
 
 .signup_or_login {
-  background: rgb(5, 20, 35);
-  color: rgb(20, 205, 205);
+  background: #F0FFF3;
+  color: rgb(5, 20, 35);
   height: 100%;
   width: 100%;
   display: flex;
@@ -379,7 +391,7 @@ dialog button {
 }
 .signup_or_login div input {
   padding: 4px;
-  outline-color: rgb(5, 20, 35);
+  outline-color: #F0FFF3;
 }
 .signup_or_login input {
   border: none;
@@ -388,24 +400,24 @@ dialog button {
 }
 .signup_or_login .dialog-submit {
   padding: 5px 15px;
-  background-color: rgb(20, 205, 205);
-  color: rgb(5, 20, 35);
+  background-color: rgb(5, 20, 35);
+  color: #F0FFF3;
   cursor: pointer;
   font-weight: bold;
 }
 .signup_or_login a {
-  color: rgb(20, 205, 205);
+  color: rgb(5, 20, 35);
   text-decoration: underline;
 }
 
 html {
   padding: 2px;
-  background-color: rgb(20, 205, 205);
+  background-color: rgb(5, 20, 35);
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(5, 20, 35);
+  background-color: #F0FFF3;
 }
 
 main {
@@ -420,12 +432,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(5, 20, 35);
+  background-color: #F0FFF3;
 }
 
 .get-started {
-  background-color: rgb(20, 205, 205);
-  color: rgb(5, 20, 35);
+  background-color: rgb(5, 20, 35);
+  color: #F0FFF3;
   border-radius: 20px;
   font-size: 16px;
   font-weight: bold;
@@ -444,7 +456,7 @@ header {
   height: 3px;
   width: 100%;
   border-radius: 10px;
-  background-color: rgb(20, 205, 205);
+  background-color: rgb(5, 20, 35);
   transition: all 0.5s ease-in-out;
 }
 .hamburger-btn::before {
@@ -453,7 +465,7 @@ header {
   height: 3px;
   width: 80%;
   border-radius: 10px;
-  background-color: rgb(20, 205, 205);
+  background-color: rgb(5, 20, 35);
   transition: all 0.5s ease-in-out;
   top: -9px;
 }
@@ -463,7 +475,7 @@ header {
   height: 3px;
   width: 60%;
   border-radius: 10px;
-  background-color: rgb(20, 205, 205);
+  background-color: rgb(5, 20, 35);
   transition: all 0.5s ease-in-out;
   bottom: -9px;
 }
@@ -475,12 +487,12 @@ header {
 }
 .hamburger.animate .hamburger-btn::before {
   transform: rotate(45deg) translate(8px, 7px);
-  background-color: rgb(5, 20, 35);
+  background-color: #F0FFF3;
   width: 100%;
 }
 .hamburger.animate .hamburger-btn::after {
   transform: rotate(-45deg) translate(7px, -6px);
-  background-color: rgb(5, 20, 35);
+  background-color: #F0FFF3;
   width: 100%;
 }
 
@@ -491,7 +503,7 @@ header {
   top: 0px;
   right: 0px;
   border-radius: 50%;
-  background: rgb(20, 205, 205);
+  background: rgb(5, 20, 35);
   opacity: 0.93;
   transform: translate(100%);
   transition: all 0.5s ease-in-out;
@@ -508,11 +520,11 @@ header {
 }
 .menu a {
   text-decoration: none;
-  color: rgb(5, 20, 35);
+  color: #F0FFF3;
   font-size: 18px;
 }
 .menu a.active {
-  color: blue;
+  color: rgb(4, 189, 251);
 }
 .menu .login {
   align-self: center;
@@ -521,8 +533,8 @@ header {
   margin-top: 15px;
 }
 .menu .login a {
-  border: 1px solid rgb(5, 20, 35);
-  color: rgb(5, 20, 35);
+  border: 1px solid #F0FFF3;
+  color: #F0FFF3;
   font-size: 14px;
   font-weight: bold;
   border-radius: 20px;
@@ -530,8 +542,8 @@ header {
   text-decoration: none;
 }
 .menu .login a:nth-child(1) {
-  background-color: rgb(5, 20, 35);
-  color: rgb(20, 205, 205);
+  background-color: #F0FFF3;
+  color: rgb(5, 20, 35);
 }
 
 .logo-container {
@@ -546,92 +558,112 @@ header {
 }
 .logo-container h1 a {
   text-decoration: none;
-  color: rgb(20, 205, 205);
+  color: rgb(5, 20, 35);
 }
 
 .get-started_section {
   padding: 40px 0;
-  background: rgba(20, 205, 205, 0.7);
+  background: linear-gradient(to bottom, rgba(20, 205, 205, 0.142), #F0FFF3);
+  border-bottom: 2px solid rgba(20, 205, 205, 0.142);
+  color: rgb(5, 20, 35);
 }
 .get-started_section .intro {
-  margin: 0 auto 10px;
-  background-color: rgb(5, 20, 35);
-  color: rgb(20, 205, 205);
-  font-size: 14px;
-  font-style: italic;
-  width: 90%;
-  line-height: 2;
-  padding: 5px;
-  border-top-right-radius: 60px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 10px;
+  text-align: center;
+  padding: 10px;
 }
-.get-started_section .outro {
-  margin: 10px auto 0;
-  background-color: rgb(5, 20, 35);
-  color: rgb(20, 205, 205);
-  font-size: 14px;
-  font-style: italic;
-  width: 90%;
-  line-height: 2;
-  padding: 5px 0 5px 10%;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 40px;
+.get-started_section .intro h2 {
+  font-size: 17px;
+}
+.get-started_section .intro p {
+  font-size: 12px;
 }
 
 .feature-container {
-  width: 100%;
+  padding: 40px 10px 80px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 0 20px;
-  justify-content: center;
+  gap: 20px;
+}
+.feature-container .features {
+  display: flex;
   align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.feature-container .features img {
+  width: 70px;
+  height: 70px;
+}
+.feature-container .features .text h3 {
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+.feature-container .features .text p {
+  font-size: 14px;
 }
 
-.features {
-  display: flex;
-  gap: 10px;
-  padding: 5px;
-  align-items: center;
-  background-color: rgb(20, 205, 205);
-  opacity: 0.8;
-  width: 95%;
+.other-feature-container h3 {
+  border: 1px solid rgb(5, 20, 35);
   border-radius: 20px;
-  border: 1px solid black;
-  box-shadow: 0 0 10px rgb(20, 205, 205), 0 0 10px rgb(20, 205, 205);
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 3px 0;
 }
-.features:first-child {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.other-feature-container .other-features {
+  padding: 10px 0 20px;
+  display: grid;
+  gap: 10px;
 }
-.features:last-child {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+.other-feature-container .other-features div {
+  padding: 10px;
+  position: relative;
 }
-.features img {
-  width: 20%;
+.other-feature-container .other-features div .pro {
+  background-color: gold;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  padding: 2px;
+  border-radius: 10px;
+  position: absolute;
+  top: 15px;
+  right: 50px;
 }
-.features .text {
-  display: flex;
-  flex-direction: column;
+.other-feature-container .other-features div i {
+  font-size: 15px;
 }
-.features .text h2 {
+.other-feature-container .other-features div h4 {
+  font-size: 13px;
+}
+.other-feature-container .other-features div p {
   font-size: 12px;
 }
-.features .text p {
-  font-size: 9px;
-  color: rgb(5, 20, 35);
+.other-feature-container a {
+  justify-self: center;
+  color: gold;
+  border: solid 1px gold;
+  border-radius: 20px;
+  padding: 5px;
+  text-decoration: none;
 }
-.features .text i {
-  margin: 5px 30px 0 0;
-  align-self: flex-end;
-  z-index: 4;
+
+.faq h3 {
+  border: 1px solid rgb(5, 20, 35);
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 3px 0;
+}
+.faq div {
+  padding: 10px;
 }
 
 footer {
-  background-color: rgb(5, 20, 35);
+  background-color: #F0FFF3;
 }
 
 .sponsors {
@@ -652,7 +684,7 @@ footer {
   height: 3px;
   border-radius: 5px;
   width: 95%;
-  background-color: rgb(20, 205, 205);
+  background-color: rgb(5, 20, 35);
   margin: 0 auto;
 }
 
@@ -671,9 +703,9 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: rgb(20, 205, 205);
+  background-color: rgb(5, 20, 35);
 }
 .socials div i {
-  color: rgb(5, 20, 35);
+  color: #F0FFF3;
   font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

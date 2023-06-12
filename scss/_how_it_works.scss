@@ -22,7 +22,7 @@ header.top-header {
 
 .how-it-works_section {
     position: relative;
-    height: 160vh;
+    height: 130vh;
     background: linear-gradient(
         to bottom, 
         $primary-color, 
@@ -39,6 +39,16 @@ header.top-header {
         opacity: 0.3;
     }
     
+}
+@include mediaQuery(max-height, 640px) {
+    .how-it-works_section {
+        height: 150vh;
+    }
+}
+@include mediaQuery (max-height, 540px) {
+    .how-it-works_section {
+        height: 160vh;
+    }
 }
 
 .how-it-works {
