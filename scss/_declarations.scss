@@ -14,6 +14,9 @@ $secondary-color: rgb(5, 20, 35);
 
 @mixin transition {
     transition: all 0.5s ease-in-out;
+    @include mediaQuery(min-width, 992px){
+       transition: none;
+    }
 }
 
 @mixin burgerBtnStyle($width: 100%) {
@@ -23,6 +26,9 @@ $secondary-color: rgb(5, 20, 35);
     border-radius: 10px;
     background-color: $secondary-color;
     transition: all 0.5s ease-in-out;
+    @include mediaQuery(min-width, 600px){
+        height: 4px;
+    }
 }
 
 @mixin login_h3style($divColoring: $primary-color){
@@ -31,8 +37,17 @@ $secondary-color: rgb(5, 20, 35);
     font-size: 14px;
     font-weight: bold;
     border-radius: 20px;
-    padding: 5px 5px;
+    padding: 5px;
     text-decoration: none;
+    @include mediaQuery(min-width, 992px){
+        $divColoring: $secondary-color;
+        color: $divColoring;
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+    @include mediaQuery(min-width, 1200px){
+        font-size: 17px;
+    }
 }
 
 @mixin mediaQuery($widthOrHeight, $screenSize) {

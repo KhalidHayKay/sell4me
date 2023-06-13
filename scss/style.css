@@ -28,34 +28,28 @@ header.top-header h1 a {
 
 .how-it-works_section {
   position: relative;
-  height: 130vh;
+  min-height: 100vh;
+  height: 1300px;
   background: linear-gradient(to bottom, #F0FFF3, rgba(20, 205, 205, 0.142));
   display: grid;
   grid-template-areas: "text";
 }
+@media only screen and (max-width: 340px) {
+  .how-it-works_section {
+    height: 1400px;
+  }
+}
 .how-it-works_section img {
   width: 100%;
-  height: 75%;
-  margin-top: 50px;
+  height: 100%;
   grid-area: text;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.3;
 }
 
-@media only screen and (max-height: 640px) {
-  .how-it-works_section {
-    height: 150vh;
-  }
-}
-@media only screen and (max-height: 540px) {
-  .how-it-works_section {
-    height: 160vh;
-  }
-}
 .how-it-works {
   position: absolute;
-  padding-top: 50px;
   height: 100%;
   width: 90%;
   display: flex;
@@ -68,16 +62,16 @@ header.top-header h1 a {
 .how-it-works h3 {
   width: 85%;
   margin-left: 15px;
-  font-size: 16px;
+  font-size: 23px;
   font-weight: normal;
   list-style: none;
 }
 .how-it-works ul {
-  font-size: 14px;
+  font-size: 18px;
   margin-left: 40px;
 }
 .how-it-works ul li {
-  font-size: 11px;
+  font-size: 16px;
   list-style-type: circle;
 }
 .how-it-works ul li img {
@@ -87,7 +81,7 @@ header.top-header h1 a {
   opacity: 0.99;
 }
 .how-it-works ul li figcaption {
-  font-size: 9px;
+  font-size: 12px;
 }
 .how-it-works a {
   text-decoration: none;
@@ -410,11 +404,6 @@ dialog button {
   text-decoration: underline;
 }
 
-html {
-  padding: 2px;
-  background-color: rgb(5, 20, 35);
-}
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: #F0FFF3;
@@ -434,6 +423,18 @@ header {
   align-items: center;
   background-color: #F0FFF3;
 }
+@media only screen and (min-width: 992px) {
+  header {
+    padding: 30px;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header {
+    gap: 70px;
+  }
+}
 
 .get-started {
   background-color: rgb(5, 20, 35);
@@ -444,12 +445,45 @@ header {
   text-decoration: none;
   padding: 5px 7px;
 }
+@media only screen and (min-width: 600px) {
+  .get-started {
+    font-size: 20px;
+    padding: 5px 15px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .get-started {
+    width: 170px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .get-started {
+    font-size: 23px;
+    width: 200px;
+    border-radius: 40px;
+  }
+}
 
 .hamburger {
   width: 30px;
   position: relative;
   transition: all 0.5s ease-in-out;
   z-index: 2;
+}
+@media only screen and (min-width: 992px) {
+  .hamburger {
+    transition: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .hamburger {
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
 }
 .hamburger-btn {
   position: absolute;
@@ -458,6 +492,11 @@ header {
   border-radius: 10px;
   background-color: rgb(5, 20, 35);
   transition: all 0.5s ease-in-out;
+}
+@media only screen and (min-width: 600px) {
+  .hamburger-btn {
+    height: 4px;
+  }
 }
 .hamburger-btn::before {
   content: "";
@@ -469,6 +508,16 @@ header {
   transition: all 0.5s ease-in-out;
   top: -9px;
 }
+@media only screen and (min-width: 600px) {
+  .hamburger-btn::before {
+    height: 4px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .hamburger-btn::before {
+    top: -11px;
+  }
+}
 .hamburger-btn::after {
   content: "";
   position: absolute;
@@ -478,6 +527,16 @@ header {
   background-color: rgb(5, 20, 35);
   transition: all 0.5s ease-in-out;
   bottom: -9px;
+}
+@media only screen and (min-width: 600px) {
+  .hamburger-btn::after {
+    height: 4px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .hamburger-btn::after {
+    bottom: -11px;
+  }
 }
 .hamburger.animate {
   transform: rotate(360deg);
@@ -505,32 +564,71 @@ header {
   border-radius: 50%;
   background: rgb(5, 20, 35);
   opacity: 0.93;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
   transform: translate(100%);
-  transition: all 0.5s ease-in-out;
+  padding-right: 70%;
   z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+@media only screen and (min-width: 992px) {
+  .menu {
+    transition: none;
+  }
+}
+.menu.animate {
+  transform: translate(50%, 0);
+}
+@media only screen and (min-width: 992px) {
+  .menu {
+    position: static;
+    background-color: transparent;
+    transform: translate(0);
+    flex-direction: row;
+    justify-content: space-between;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: inherit;
+    padding: 0;
+  }
+}
+.menu .anchor {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding-right: 70%;
 }
-.menu.animate {
-  transform: translate(50%, 0);
+@media only screen and (min-width: 992px) {
+  .menu .anchor {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
-.menu a {
+.menu .anchor a {
   text-decoration: none;
   color: #F0FFF3;
   font-size: 18px;
 }
-.menu a.active {
+@media only screen and (min-width: 992px) {
+  .menu .anchor a {
+    color: rgb(5, 20, 35);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .menu .anchor a {
+    font-size: larger;
+  }
+}
+.menu .anchor a.active {
   color: rgb(4, 189, 251);
 }
 .menu .login {
   align-self: center;
   display: flex;
   gap: 15px;
-  margin-top: 15px;
 }
 .menu .login a {
   border: 1px solid #F0FFF3;
@@ -538,12 +636,30 @@ header {
   font-size: 14px;
   font-weight: bold;
   border-radius: 20px;
-  padding: 5px 5px;
+  padding: 5px;
   text-decoration: none;
+}
+@media only screen and (min-width: 992px) {
+  .menu .login a {
+    color: rgb(5, 20, 35);
+    font-size: 15px;
+    padding: 6px 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .menu .login a {
+    font-size: 17px;
+  }
 }
 .menu .login a:nth-child(1) {
   background-color: #F0FFF3;
   color: rgb(5, 20, 35);
+}
+@media only screen and (min-width: 992px) {
+  .menu .login a:nth-child(1) {
+    background-color: rgb(5, 20, 35);
+    color: #F0FFF3;
+  }
 }
 
 .logo-container {
@@ -556,6 +672,11 @@ header {
   font-size: 40px;
   font-family: monospace;
 }
+@media only screen and (min-width: 600px) {
+  .logo-container h1 {
+    font-size: 55px;
+  }
+}
 .logo-container h1 a {
   text-decoration: none;
   color: rgb(5, 20, 35);
@@ -567,22 +688,79 @@ header {
   border-bottom: 2px solid rgba(20, 205, 205, 0.142);
   color: rgb(5, 20, 35);
 }
+@media only screen and (min-width: 1200px) {
+  .get-started_section {
+    padding: 90px 0;
+  }
+}
 .get-started_section .intro {
   text-align: center;
-  padding: 10px;
+  padding: 0 10px;
+}
+@media only screen and (min-width: 600px) {
+  .get-started_section .intro {
+    padding: 0 70px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .get-started_section .intro {
+    padding: 0 170px;
+  }
 }
 .get-started_section .intro h2 {
   font-size: 17px;
 }
+@media only screen and (min-width: 600px) {
+  .get-started_section .intro h2 {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .get-started_section .intro h2 {
+    font-size: 27px;
+  }
+}
 .get-started_section .intro p {
   font-size: 12px;
 }
+@media only screen and (min-width: 600px) {
+  .get-started_section .intro p {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .get-started_section .intro p {
+    font-size: 20px;
+    padding: 0 200px;
+  }
+}
 
 .feature-container {
-  padding: 40px 10px 80px;
+  padding: 50px 30px 80px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
+}
+@media only screen and (min-width: 450px) {
+  .feature-container {
+    padding: 50px 50px 80px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .feature-container {
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .feature-container {
+    padding: 50px 90px 80px;
+    gap: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .feature-container {
+    padding: 90px 150px 80px;
+  }
 }
 .feature-container .features {
   display: flex;
@@ -598,26 +776,53 @@ header {
   font-size: 15px;
   letter-spacing: 5px;
 }
+@media only screen and (min-width: 600px) {
+  .feature-container .features .text h3 {
+    font-size: 20px;
+  }
+}
 .feature-container .features .text p {
   font-size: 14px;
+  word-break: break-all;
+}
+@media only screen and (min-width: 600px) {
+  .feature-container .features .text p {
+    font-size: 19px;
+  }
 }
 
 .other-feature-container h3 {
-  border: 1px solid rgb(5, 20, 35);
-  border-radius: 20px;
-  width: 100%;
   text-align: center;
-  font-size: 15px;
-  font-weight: normal;
-  padding: 3px 0;
+  color: grey;
+}
+@media only screen and (min-width: 600px) {
+  .other-feature-container h3 {
+    font-size: 25px;
+  }
 }
 .other-feature-container .other-features {
-  padding: 10px 0 20px;
+  padding: 10px 30px 20px;
   display: grid;
   gap: 10px;
 }
+@media only screen and (min-width: 450px) {
+  .other-feature-container .other-features {
+    padding: 10px 40px 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .other-feature-container .other-features {
+    padding: 10px 80px 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .other-feature-container .other-features {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px 80px 50px;
+  }
+}
 .other-feature-container .other-features div {
-  padding: 10px;
   position: relative;
 }
 .other-feature-container .other-features div .pro {
@@ -628,38 +833,49 @@ header {
   padding: 2px;
   border-radius: 10px;
   position: absolute;
-  top: 15px;
-  right: 50px;
+  top: 5px;
+  right: 40px;
 }
 .other-feature-container .other-features div i {
   font-size: 15px;
 }
+@media only screen and (min-width: 600px) {
+  .other-feature-container .other-features div i {
+    font-size: 20px;
+  }
+}
 .other-feature-container .other-features div h4 {
   font-size: 13px;
+}
+@media only screen and (min-width: 600px) {
+  .other-feature-container .other-features div h4 {
+    font-size: 18px;
+  }
 }
 .other-feature-container .other-features div p {
   font-size: 12px;
 }
+@media only screen and (min-width: 600px) {
+  .other-feature-container .other-features div p {
+    font-size: 17px;
+  }
+}
 .other-feature-container a {
-  justify-self: center;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
   color: gold;
   border: solid 1px gold;
   border-radius: 20px;
   padding: 5px;
   text-decoration: none;
 }
-
-.faq h3 {
-  border: 1px solid rgb(5, 20, 35);
-  border-radius: 20px;
-  width: 100%;
-  text-align: center;
-  font-size: 15px;
-  font-weight: normal;
-  padding: 3px 0;
-}
-.faq div {
-  padding: 10px;
+@media only screen and (min-width: 600px) {
+  .other-feature-container a {
+    font-size: 17px;
+    padding: 5px 8px;
+  }
 }
 
 footer {
@@ -673,11 +889,17 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .sponsors img {
-  width: 80%;
+  width: 70%;
   justify-self: center;
+}
+@media only screen and (min-width: 600px) {
+  .sponsors img {
+    max-width: 100px;
+    width: 50%;
+  }
 }
 
 .borderline {
@@ -697,15 +919,26 @@ footer {
   padding: 30px;
 }
 .socials div {
-  width: 27px;
-  height: 27px;
+  width: 35px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background-color: rgb(5, 20, 35);
 }
+@media only screen and (min-width: 992px) {
+  .socials div {
+    width: 40px;
+    height: 40px;
+  }
+}
 .socials div i {
   color: #F0FFF3;
   font-size: 16px;
+}
+@media only screen and (min-width: 992px) {
+  .socials div i {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=style.css.map */

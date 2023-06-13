@@ -22,38 +22,30 @@ header.top-header {
 
 .how-it-works_section {
     position: relative;
-    height: 130vh;
+    min-height: 100vh;
+    height: 1300px;
     background: linear-gradient(
         to bottom, 
         $primary-color, 
         rgba(20, 205, 205, 0.142));
     display: grid;
     grid-template-areas: "text";
+    @include mediaQuery(max-width, 340px){
+        height: 1400px;
+    }
 
     img {
         width: 100%;
-        height: 75%;
-        margin-top: 50px;
+        height: 100%;
         grid-area: text;
         object-fit: cover;
         opacity: 0.3;
     }
     
 }
-@include mediaQuery(max-height, 640px) {
-    .how-it-works_section {
-        height: 150vh;
-    }
-}
-@include mediaQuery (max-height, 540px) {
-    .how-it-works_section {
-        height: 160vh;
-    }
-}
 
 .how-it-works {
     position: absolute;
-    padding-top: 50px;
     height: 100%;
     width: 90%;
     display: flex;
@@ -63,23 +55,21 @@ header.top-header {
     color: $secondary-color;
     opacity: 0.95;
 
-    
-
     h3 {
         width: 85%;
         margin-left: 15px;
-        font-size: 16px;
+        font-size: 23px;
         font-weight: normal;
         list-style: none;
         
     }
 
     ul {
-        font-size: 14px;
+        font-size: 18px;
         margin-left: 40px;
 
         li {
-            font-size: 11px;
+            font-size: 16px;
             list-style-type: circle;
 
             img {
@@ -89,7 +79,7 @@ header.top-header {
                 opacity: 0.99;
             }
             figcaption {
-                font-size: 9px;
+                font-size: 12px;
             }
         }
     }

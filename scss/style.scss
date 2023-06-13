@@ -1,9 +1,5 @@
 @import "declarations", "how_it_works", "contact_us", "stock", "reviews", "login_signup";
 
-html {
-    padding: 2px;
-    background-color: $secondary-color;
-}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -23,6 +19,14 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: $primary-color;
+    @include mediaQuery(min-width, 992px){
+        padding: 30px;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    @include mediaQuery(min-width, 1200px){
+        gap: 70px;
+    }
 }
 
 .get-started {
@@ -33,6 +37,18 @@ header {
     font-weight: bold;
     text-decoration: none;
     padding: 5px 7px;
+    @include mediaQuery(min-width, 600px){
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+    @include mediaQuery(min-width, 992px){
+        width: 170px;
+    }
+    @include mediaQuery(min-width, 1200px){
+        font-size: 23px;
+        width: 200px;
+        border-radius: 40px;
+    }
 }
 
 .hamburger {
@@ -40,6 +56,12 @@ header {
     position: relative;
     @include transition;
     z-index: 2;
+    @include mediaQuery(min-width, 600px){
+        width: 40px;
+    }
+    @include mediaQuery(min-width, 992px){
+        display: none
+    }
     
     &-btn {
         @include burgerBtnStyle;
@@ -48,11 +70,17 @@ header {
             content: "";
             @include burgerBtnStyle(80%);
             top: -9px;
+            @include mediaQuery(min-width, 600px){
+                top: -11px;
+            }
         }
         &::after {
             content: "";
             @include burgerBtnStyle(60%);
             bottom: -9px;
+            @include mediaQuery(min-width, 600px){
+                bottom: -11px;
+            }
         }
     }
 
@@ -85,25 +113,52 @@ header {
     border-radius: 50%;
     background: $secondary-color;
     opacity: 0.93;
-    transform: translate(100%);
-    @include transition;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
+    gap: 35px;
+    transform: translate(100%);
     padding-right: 70%;
+    z-index: 1;
+    @include transition;
     &.animate {
         transform: translate(50%, 0);
     }
+    @include mediaQuery(min-width, 992px){
+        position: static;
+        background-color: transparent;
+        transform: translate(0);
+        flex-direction: row;
+        justify-content: space-between;
+        height: fit-content;
+        width: inherit;
+        padding: 0;
+    }
+
+    .anchor {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        @include mediaQuery(min-width, 992px){
+            flex-direction: row;
+            gap: 20px;
+        }
     
-    a {
-        text-decoration: none;
-        color: $primary-color;
-        font-size: 18px;
-        &.active {
-            color: rgb(4, 189, 251);
+        a {
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 18px;
+            @include mediaQuery(min-width, 992px){
+                color: $secondary-color;
+            }
+            @include mediaQuery(min-width, 1200px){
+                font-size: larger;
+            }
+            &.active {
+                color: rgb(4, 189, 251);
+            }
         }
     }
 
@@ -111,13 +166,16 @@ header {
         align-self: center;
         display: flex;
         gap: 15px;
-        margin-top: 15px;
 
         a {
             @include login_h3style;
             &:nth-child(1) {
                 background-color: $primary-color;
                 color: $secondary-color;
+                @include mediaQuery(min-width, 992px){
+                    background-color: $secondary-color;
+                    color: $primary-color;
+                }
             }
         }   
     }
@@ -132,6 +190,9 @@ header {
     h1 {
         font-size: 40px;
         font-family: monospace;
+        @include mediaQuery(min-width, 600px){
+            font-size: 55px;
+        }
         a {
             text-decoration: none;
             color: $secondary-color;
@@ -148,25 +209,60 @@ header {
         $primary-color);
         border-bottom: 2px solid rgba(20, 205, 205, 0.142);
     color: $secondary-color;
+    @include mediaQuery(min-width, 1200px){
+        padding: 90px 0;
+    }
 
         .intro {
             text-align: center;
-            padding: 10px;
+            padding: 0 10px;
+            @include mediaQuery(min-width, 600px){
+                padding: 0 70px;
+            }
+            @include mediaQuery(min-width, 1200px){
+                padding: 0 170px;
+            }
 
             h2 {
                 font-size: 17px;
+                @include mediaQuery(min-width, 600px){
+                    font-size: 22px;
+                }
+                @include mediaQuery(min-width, 1200px){
+                    font-size: 27px;
+                }
             }
             p {
                 font-size: 12px;
+                @include mediaQuery(min-width, 600px){
+                    font-size: 15px;
+                }
+                @include mediaQuery(min-width, 1200px){
+                    font-size: 20px;
+                    padding: 0 200px;
+                }
             }
          }
 }
 
 .feature-container {
-    padding: 40px 10px 80px;
+    padding: 50px 30px 80px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    @include mediaQuery(min-width, 450px){
+        padding: 50px 50px 80px;
+    }
+    @include mediaQuery(min-width, 600px){
+        gap: 20px;
+    }
+    @include mediaQuery(min-width, 992px){
+        padding: 50px 90px 80px;
+        gap: 40px;
+     }
+    @include mediaQuery(min-width, 1200px){
+        padding: 90px 150px 80px;
+    }
 
     .features {
         display: flex;
@@ -182,9 +278,16 @@ header {
             h3 {
                 font-size: 15px;
                 letter-spacing: 5px;
+                @include mediaQuery(min-width, 600px){
+                    font-size: 20px;
+                }
             }
             p {
                 font-size: 14px;
+                word-break: break-all;
+                @include mediaQuery(min-width, 600px){
+                    font-size: 19px;
+                }
             }
         }
     }
@@ -192,22 +295,30 @@ header {
 
 .other-feature-container {
     h3 {
-        border: 1px solid $secondary-color;
-        border-radius: 20px;
-        width: 100%;
         text-align: center;
-        font-size: 15px;
-        font-weight: normal;
-        padding: 3px 0;
+        color: grey;
+        @include mediaQuery(min-width, 600px){
+           font-size: 25px;
+        }
     }
 
     .other-features {
-        padding: 10px 0 20px;
+        padding: 10px 30px 20px;
         display: grid;
         gap: 10px;
+        @include mediaQuery(min-width, 450px){
+            padding: 10px 40px 20px;
+        }
+        @include mediaQuery(min-width, 992px){
+            padding: 10px 80px 20px;
+         }
+        @include mediaQuery(min-width, 1200px){
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 40px 80px 50px;
+        }
 
         div {
-            padding: 10px;
             position: relative;
     
             .pro {
@@ -217,46 +328,43 @@ header {
                 padding: 2px;
                 border-radius: 10px;
                 position: absolute;
-                top: 15px;
-                right: 50px;
+                top: 5px;
+                right: 40px;
             }
             i {
                 font-size: 15px;
+                @include mediaQuery(min-width, 600px){
+                    font-size: 20px;
+                }
             }
             h4 {
                 font-size: 13px;
+                @include mediaQuery(min-width, 600px){
+                    font-size: 18px;
+                }
             }
             p {
                 font-size: 12px;
+                @include mediaQuery(min-width, 600px){
+                    font-size: 17px;
+                }
             }
         }
     }
 
     a {
-        justify-self: center;
+        display: block;
+        width: fit-content;
+        margin: auto;
         color: gold;
         border: solid 1px gold;
         border-radius: 20px;
         padding: 5px;
         text-decoration: none;
-    }
-}
-
-.faq {
-    h3 {
-        border: 1px solid $secondary-color;
-        border-radius: 20px;
-        width: 100%;
-        text-align: center;
-        font-size: 15px;
-        font-weight: normal;
-        padding: 3px 0;
-    }
-
-    div {
-        padding: 10px;
-
-        
+        @include mediaQuery(min-width, 600px){
+            font-size: 17px;
+            padding: 5px 8px;
+        }
     }
 }
 
@@ -272,11 +380,15 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    opacity: 0.8;
+    opacity: 0.7;
 
     img {
-        width: 80%;
+        width: 70%;
         justify-self: center;
+        @include mediaQuery(min-width, 600px){
+            max-width: 100px;
+            width: 50%;
+        }
     }
 }
 
@@ -297,18 +409,24 @@ footer {
     padding: 30px;
 
     div {
-        width: 27px;
-        height: 27px;
+        width: 35px;
+        height: 35px;
         display: flex;
         align-items: center;
         justify-content: center;
-        // padding: 4px;
         border-radius: 50%;
         background-color: $secondary-color;
+        @include mediaQuery(min-width, 992px){
+           width: 40px;
+           height: 40px;
+        }
 
         i {
             color: $primary-color;
             font-size: 16px;
+            @include mediaQuery(min-width, 992px){
+                font-size: 18px;
+             }
         }
     }
 }
