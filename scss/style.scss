@@ -22,7 +22,7 @@ header {
     @include mediaQuery(min-width, 992px){
         padding: 30px;
         justify-content: flex-start;
-        gap: 20px;
+        gap: 40px;
     }
     @include mediaQuery(min-width, 1200px){
         gap: 70px;
@@ -158,6 +158,9 @@ header {
             }
             &.active {
                 color: rgb(4, 189, 251);
+                @include mediaQuery(min-width, 992px){
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -261,18 +264,22 @@ header {
         gap: 40px;
      }
     @include mediaQuery(min-width, 1200px){
-        padding: 90px 150px 80px;
+        padding: 90px 200px 80px;
     }
 
     .features {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
         gap: 5px;
     
         img {
             width: 70px;
             height: 70px;
+            @include mediaQuery(min-width, 1200px){
+                width: 100px;
+                height: 100px;
+            }
         }
         .text {
             h3 {
@@ -281,12 +288,18 @@ header {
                 @include mediaQuery(min-width, 600px){
                     font-size: 20px;
                 }
+                @include mediaQuery(min-width, 1200px){
+                    font-size: 21px;
+                }
             }
             p {
                 font-size: 14px;
                 word-break: break-all;
                 @include mediaQuery(min-width, 600px){
                     font-size: 19px;
+                }
+                @include mediaQuery(min-width, 1200px){
+                    font-size: 20px;
                 }
             }
         }

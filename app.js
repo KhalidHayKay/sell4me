@@ -56,19 +56,3 @@ document.querySelector('#signup-dialog p>a').addEventListener('click', e => {
     signupDialog.close();
     loginDialog.show();
 })
-
-
-//  TESTMONIAL SLIDE
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: "auto",
-    spaceBetween: 20,
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: 'true',
-      },
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-    },
-  });
