@@ -512,27 +512,32 @@ dialog {
   width: 100%;
   height: 100vh;
   border: none;
-}
-dialog button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: rgb(5, 20, 35);
-  padding: 2px;
-  font-size: 11px;
-  font-weight: bold;
+  margin: auto;
+  background-color: rgba(240, 255, 243, 0.8470588235);
 }
 
 .signup_or_login {
-  background: #F0FFF3;
-  color: rgb(5, 20, 35);
+  position: relative;
+  background: rgb(5, 20, 35);
+  color: #F0FFF3;
   height: 100%;
+  max-width: 500px;
   width: 100%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+.signup_or_login button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #F0FFF3;
+  padding: 2px;
+  font-size: 11px;
+  font-weight: bold;
 }
 .signup_or_login div {
   display: flex;
@@ -551,7 +556,7 @@ dialog button {
 }
 .signup_or_login div input {
   padding: 4px;
-  outline-color: #F0FFF3;
+  outline-color: rgb(5, 20, 35);
 }
 .signup_or_login input {
   border: none;
@@ -560,13 +565,13 @@ dialog button {
 }
 .signup_or_login .dialog-submit {
   padding: 5px 15px;
-  background-color: rgb(5, 20, 35);
-  color: #F0FFF3;
+  background-color: #F0FFF3;
+  color: rgb(5, 20, 35);
   cursor: pointer;
   font-weight: bold;
 }
 .signup_or_login a {
-  color: rgb(5, 20, 35);
+  color: #F0FFF3;
   text-decoration: underline;
 }
 
@@ -610,6 +615,7 @@ header {
   font-weight: bold;
   text-decoration: none;
   padding: 5px 7px;
+  transition: 0.2s;
 }
 @media only screen and (min-width: 600px) {
   .get-started {
@@ -621,12 +627,15 @@ header {
   .get-started {
     width: 170px;
   }
+  .get-started:hover {
+    background-color: rgb(4, 189, 251);
+  }
 }
 @media only screen and (min-width: 1200px) {
   .get-started {
     font-size: 23px;
-    width: 200px;
-    border-radius: 40px;
+    width: 190px;
+    border-radius: 35px;
   }
 }
 
@@ -782,6 +791,9 @@ header {
   .menu .anchor a {
     color: rgb(5, 20, 35);
   }
+  .menu .anchor a:hover {
+    text-decoration: underline;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .menu .anchor a {
@@ -802,6 +814,7 @@ header {
   gap: 15px;
 }
 .menu .login a {
+  transition: 0.2s;
   border: 1px solid #F0FFF3;
   color: #F0FFF3;
   font-size: 14px;
@@ -831,6 +844,11 @@ header {
     background-color: rgb(5, 20, 35);
     color: #F0FFF3;
   }
+}
+.menu .login a:hover {
+  border: 1px solid rgb(5, 20, 35);
+  color: rgb(5, 20, 35);
+  background-color: transparent;
 }
 
 .logo-container {

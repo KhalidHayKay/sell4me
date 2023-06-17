@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../logo/sell4me.png" type="image/x-icon">
-    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="shortcut icon" href="logo/sell4me.png" type="image/x-icon">
+    <link rel="stylesheet" href="scss/style.css">
     <title>Sell4Me</title>
 </head>
 <body>
     <div class="dialog">
         <dialog id="login-dialog">
-            <button>Cancel</button>
             <form action="#" class="signup_or_login">
+                <button>Esc</button>
                 <div>
                     <label for="email">Email</label>
                     <input type="email" name="email">
@@ -28,8 +28,8 @@
             </form>
         </dialog>
         <dialog id="signup-dialog">
-            <button>Cancel</button>
-            <form action="#" class="signup_or_login">
+            <form action="#" class="signup_or_login login">
+                <button>Cancel</button>
                 <div>
                     <label for="email">Email</label>
                     <input type="email" name="email">
@@ -45,7 +45,7 @@
                 </div>
                 <input type="submit" value="Sign Up" class="dialog-submit">
     
-                <p>Already have an account? <a href="#">Login</a></p>
+                <p>Already have an account? <a href="#" class="login">Login</a></p>
             </form>
         </dialog>
         <dialog id="reset-dialog">
@@ -70,10 +70,10 @@
             <nav class="menu">
                 <div class="anchor">
                     <a href="#" class="active">Home</a>
-                    <a href="how_it_works.html">How it Works</a>
-                    <a href="stock.html">View Stocks</a>
-                    <a href="reviews.html">Reviews</a>
-                    <a href="contact_us.html">Contact Us</a> 
+                    <a href="html/how_it_works.html">How it Works</a>
+                    <a href="html/stock.html">View Stocks</a>
+                    <a href="html/reviews.html">Reviews</a>
+                    <a href="html/contact_us.html">Contact Us</a> 
                 </div>
                 
                 <div class="login">
@@ -96,12 +96,12 @@
 
         <div class="feature-container">
             <div class="features">
-                <img src="../imgs/clock.png" alt="">
+                <img src="imgs/clock.png" alt="">
                 <div class="text">
                     <h3>FAST</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        earum sunt recusandae quaerat sequi praesentium...........
+                        earum sunt recusandae quaerat sequi praesentium
                     </p>
                 </div>
             </div>
@@ -113,10 +113,10 @@
                         earum sunt recusandae quaerat sequi praesentium.
                     </p>
                 </div>
-                <img src="../imgs/reliability.png" alt="">
+                <img src="imgs/reliability.png" alt="">
             </div>
             <div class="features">
-                <img src="../imgs/tax-free.png" alt="">
+                <img src="imgs/tax-free.png" alt="">
                 <div class="text">
                     <h3>FREE</h3>
                     <p>
@@ -133,7 +133,7 @@
                         earum sunt recusandae quaerat sequi praesentium.
                     </p>
                 </div>
-                <img src="../imgs/accessibility.png" alt="">
+                <img src="imgs/accessibility.png" alt="">
             </div>
         </div>
         
@@ -170,18 +170,18 @@
 
     <footer>
         <div class="sponsors">
-            <img src="../sponsors_logo/sponsor_1.png" width="100px" alt="sponsors">
-            <img src="../sponsors_logo/sponsor_2.png" width="100px" alt="sponsors">
-            <img src="../sponsors_logo/sponsor_3.png" width="100px" alt="sponsors">
-            <img src="../sponsors_logo/sponsor_4.png" width="100px" alt="sponsors">
-            <img src="../sponsors_logo/sponsor_5.png" width="100px" alt="sponsors">
-            <img src="../sponsors_logo/sponsor_6.png" width="100px" alt="sponsors">
-            <img src="../sponsors_logo/sponsor_7.png" width="100px" alt="sponsors">
-            <img src="../sponsors_logo/sponsor_8.png" width="100px" alt="sponsors">
-            <img src="../sponsors_logo/sponsor_9.png" width="100px" alt="sponsors">
-            <img src="../sponsors_logo/sponsor_10.png" width="100px" alt="sponsors">
-            <img src="../sponsors_logo/sponsor_11.png" width="100px" alt="sponsors">
-            <img src="../sponsors_logo/sponsor_12.png" width="100px" alt="sponsors">
+            <img src="sponsors_logo/sponsor_1.png" width="100px" alt="sponsors">
+            <img src="sponsors_logo/sponsor_2.png" width="100px" alt="sponsors">
+            <img src="sponsors_logo/sponsor_3.png" width="100px" alt="sponsors">
+            <img src="sponsors_logo/sponsor_4.png" width="100px" alt="sponsors">
+            <img src="sponsors_logo/sponsor_5.png" width="100px" alt="sponsors">
+            <img src="sponsors_logo/sponsor_6.png" width="100px" alt="sponsors">
+            <img src="sponsors_logo/sponsor_7.png" width="100px" alt="sponsors">
+            <img src="sponsors_logo/sponsor_8.png" width="100px" alt="sponsors">
+            <img src="sponsors_logo/sponsor_9.png" width="100px" alt="sponsors">
+            <img src="sponsors_logo/sponsor_10.png" width="100px" alt="sponsors">
+            <img src="sponsors_logo/sponsor_11.png" width="100px" alt="sponsors">
+            <img src="sponsors_logo/sponsor_12.png" width="100px" alt="sponsors">
         </div>
         <div class="borderline"></div>
         <div class="socials">
@@ -193,6 +193,6 @@
 
 
     <script src="https://kit.fontawesome.com/ee554a58a8.js" crossorigin="anonymous"></script>
-    <script src="../app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

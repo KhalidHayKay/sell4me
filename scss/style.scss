@@ -1,4 +1,4 @@
-@import "declarations", "how_it_works", "contact_us", "stock", "reviews", "login_signup";
+@import "declarations", "how_it_works", "contact_us", "stock", "reviews", "login_dialog";
 
 
 body {
@@ -37,17 +37,21 @@ header {
     font-weight: bold;
     text-decoration: none;
     padding: 5px 7px;
+    transition: 0.2s;
     @include mediaQuery(min-width, 600px){
         font-size: 20px;
         padding: 5px 15px;
     }
     @include mediaQuery(min-width, 992px){
         width: 170px;
+        &:hover {
+            background-color: rgb(4, 189, 251);
+        }
     }
     @include mediaQuery(min-width, 1200px){
         font-size: 23px;
-        width: 200px;
-        border-radius: 40px;
+        width: 190px;
+        border-radius: 35px;
     }
 }
 
@@ -152,6 +156,9 @@ header {
             font-size: 18px;
             @include mediaQuery(min-width, 992px){
                 color: $secondary-color;
+                &:hover {
+                    text-decoration: underline;;
+                }
             }
             @include mediaQuery(min-width, 1200px){
                 font-size: larger;
@@ -170,7 +177,7 @@ header {
         display: flex;
         gap: 15px;
 
-        a {
+        a {transition: 0.2s;
             @include login_h3style;
             &:nth-child(1) {
                 background-color: $primary-color;
@@ -179,6 +186,12 @@ header {
                     background-color: $secondary-color;
                     color: $primary-color;
                 }
+            }
+
+            &:hover {
+                border: 1px solid $secondary-color;
+                color: $secondary-color;
+                background-color: transparent;
             }
         }   
     }
