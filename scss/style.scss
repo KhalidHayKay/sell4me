@@ -45,7 +45,7 @@ header {
     @include mediaQuery(min-width, 992px){
         width: 170px;
         &:hover {
-            background-color: rgb(4, 189, 251);
+            background-color: $hover-color;
         }
     }
     @include mediaQuery(min-width, 1200px){
@@ -116,7 +116,7 @@ header {
     right: 0px;
     border-radius: 50%;
     background: $secondary-color;
-    opacity: 0.93;
+    opacity: 0.99;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,7 +164,7 @@ header {
                 font-size: larger;
             }
             &.active {
-                color: rgb(4, 189, 251);
+                color: $hover-color;
                 @include mediaQuery(min-width, 992px){
                     text-decoration: underline;
                 }
@@ -202,6 +202,98 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+    .home-anime {
+        border-radius: 50%;
+        background-color: $secondary-color;
+        position: absolute;
+
+        &.one {
+            height: 120px;
+            width: 120px;
+            top: 20vh;
+            left: 15vw;
+            @include anime;
+            @include mediaQuery(max-width, 992px){
+                height: 100px;
+                width: 100px;
+            }
+            @include mediaQuery(max-width, 450px){
+                height: 90px;
+                width: 90px;
+                top: 25vh;
+                left: 5vw;
+            }
+        }
+        &.two {
+            height: 140px;
+            width: 140px;
+            bottom: 15vh;
+            right: 10vw;
+            @include anime;
+            @include mediaQuery(max-width, 992px){
+                height: 120px;
+                width: 120px;
+            };
+            @include mediaQuery(max-width, 450px){
+                bottom: 6vh;
+                right: 5vw;
+            }
+        }
+        &.three {
+            height: 100px;
+            width: 100px;
+            top: 20vh;
+            right: 25vw;
+            @include anime;
+            @include mediaQuery(max-width, 992px){
+                height: 80px;
+                width: 80px;
+            }
+            @include mediaQuery(max-width, 450px){
+                right: 10vw;
+            }
+            &:after {
+                content: '';
+                display: block;
+                height: 60px;
+                width: 60px;
+                top: 5px;
+                left: -45px;
+                @extend .home-anime;
+                @include anime;
+                @include mediaQuery(max-width, 992px){
+                    height: 50px;
+                    width: 50px;
+                    left: -35px;
+                }
+            }
+        }
+        &.four {
+            height: 60px;
+            width: 60px;
+            bottom: 30vh;
+            right: 45vw;
+            @include anime;
+            @include mediaQuery(max-width, 992px){
+                height: 50px;
+                width: 50px;
+            }
+        }
+        &.five {
+            height: 90px;
+            width: 90px;
+            bottom: 10vh;
+            left: 10vw;
+            @include anime;
+            @include mediaQuery(max-width, 992px){
+                height: 75px;
+                width: 75px;
+            }
+        }
+    }
+
 
     h1 {
         font-size: 40px;
@@ -212,6 +304,9 @@ header {
         a {
             text-decoration: none;
             color: $secondary-color;
+            &:hover {
+                color: black;
+            }
         }
     }
 }
@@ -225,6 +320,9 @@ header {
         $primary-color);
         border-bottom: 2px solid rgba(20, 205, 205, 0.142);
     color: $secondary-color;
+    @include mediaQuery(min-width, 992px){
+        padding: 60px 0;
+    }
     @include mediaQuery(min-width, 1200px){
         padding: 90px 0;
     }
@@ -336,11 +434,11 @@ header {
             padding: 10px 40px 20px;
         }
         @include mediaQuery(min-width, 992px){
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
             padding: 10px 80px 20px;
          }
         @include mediaQuery(min-width, 1200px){
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
             padding: 40px 80px 50px;
         }
 
@@ -434,14 +532,19 @@ footer {
     align-items: center;
     padding: 30px;
 
-    div {
+    a {
         width: 35px;
         height: 35px;
         display: flex;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
         border-radius: 50%;
         background-color: $secondary-color;
+        transition: 0.2s;
+        &:hover {
+            background-color: $hover-color;
+        }
         @include mediaQuery(min-width, 992px){
            width: 40px;
            height: 40px;

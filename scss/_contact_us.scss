@@ -20,7 +20,7 @@
     max-width: 800px;
     width: 90%;
     padding: 25px;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .form-header{
@@ -39,11 +39,11 @@
     outline: none;
 
     &:focus {
-        border-color: #11CBD7;
+        border-color: $hover-color;
         transition: 0.2s;
 
         &::placeholder {
-            color: #11CBD7;
+            color: $hover-color;
             transform: translateY(-12px);
         }
     }
@@ -83,4 +83,7 @@
     color: $secondary-color;
     font-weight: bold;
     cursor: pointer;
+    &:hover {
+        background: linear-gradient(to right, $hover-color, $hover-color);
+    }
 }

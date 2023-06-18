@@ -18,9 +18,18 @@ header.top-header {
 header.top-header h1 {
   font-size: 25px;
 }
+@media only screen and (min-width: 992px) {
+  header.top-header h1 {
+    font-size: 30px;
+  }
+}
 header.top-header h1 a {
   text-decoration: none;
   color: rgb(5, 20, 35);
+  transition: 0.2s;
+}
+header.top-header h1 a:hover {
+  color: rgb(4, 189, 251);
 }
 
 .how-it-works_section {
@@ -138,6 +147,11 @@ header.top-header h1 a {
   width: fit-content;
   margin: auto;
   padding: 4px;
+  transition: 0.2s;
+}
+.how-it-works a:hover {
+  border-color: #F0FFF3;
+  color: #F0FFF3;
 }
 @media only screen and (min-width: 600px) {
   .how-it-works a {
@@ -166,7 +180,7 @@ header.top-header h1 a {
   max-width: 800px;
   width: 90%;
   padding: 25px;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .form-header {
@@ -185,15 +199,15 @@ header.top-header h1 a {
   outline: none;
 }
 .contact-section input:focus {
-  border-color: #11CBD7;
+  border-color: rgb(4, 189, 251);
   transition: 0.2s;
 }
 .contact-section input:focus::-moz-placeholder {
-  color: #11CBD7;
+  color: rgb(4, 189, 251);
   transform: translateY(-12px);
 }
 .contact-section input:focus::placeholder {
-  color: #11CBD7;
+  color: rgb(4, 189, 251);
   transform: translateY(-12px);
 }
 .contact-section input::-moz-placeholder {
@@ -236,6 +250,30 @@ header.top-header h1 a {
   color: rgb(5, 20, 35);
   font-weight: bold;
   cursor: pointer;
+}
+.submit:hover {
+  background: linear-gradient(to right, rgb(4, 189, 251), rgb(4, 189, 251));
+}
+
+.page-load-animation {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-load-animation img {
+  width: 80px;
+  height: 80px;
+  animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .items {
@@ -282,23 +320,18 @@ header.top-header h1 a {
 }
 
 .review-section {
-  padding-top: 50px;
+  padding-top: 100px;
   height: -moz-fit-content;
   height: fit-content;
   background: linear-gradient(to bottom, #F0FFF3, rgba(20, 205, 205, 0.3));
 }
-@media only screen and (min-width: 1200px) {
-  .review-section {
-    padding-top: 100px;
-  }
-}
 
 .testimonial-container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 .testimonial-container h2 {
   color: rgb(5, 20, 35);
@@ -442,6 +475,7 @@ header.top-header h1 a {
 }
 .slider-nav-btn:hover {
   background-color: black;
+  color: rgb(4, 189, 251);
 }
 @media only screen and (min-width: 992px) {
   .slider-nav-btn {
@@ -504,6 +538,10 @@ header.top-header h1 a {
   color: rgb(5, 20, 35);
   font-size: 25px;
   padding: 3px 12px;
+  transition: 0.2s;
+}
+.review .send-btn:hover {
+  background-color: rgb(4, 189, 251);
 }
 
 dialog {
@@ -738,7 +776,7 @@ header {
   right: 0px;
   border-radius: 50%;
   background: rgb(5, 20, 35);
-  opacity: 0.93;
+  opacity: 0.99;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -856,6 +894,196 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.logo-container .home-anime, .logo-container .home-anime.three:after {
+  border-radius: 50%;
+  background-color: rgb(5, 20, 35);
+  position: absolute;
+}
+.logo-container .home-anime.one, .logo-container .one.home-anime.three:after {
+  height: 120px;
+  width: 120px;
+  top: 20vh;
+  left: 15vw;
+  animation-iteration-count: infinite;
+  animation-name: expand;
+  animation-duration: 2s;
+}
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.98;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .logo-container .home-anime.one, .logo-container .one.home-anime.three:after {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .logo-container .home-anime.one, .logo-container .one.home-anime.three:after {
+    height: 90px;
+    width: 90px;
+    top: 25vh;
+    left: 5vw;
+  }
+}
+.logo-container .home-anime.two, .logo-container .two.home-anime.three:after {
+  height: 140px;
+  width: 140px;
+  bottom: 15vh;
+  right: 10vw;
+  animation-iteration-count: infinite;
+  animation-name: expand;
+  animation-duration: 2s;
+}
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.98;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .logo-container .home-anime.two, .logo-container .two.home-anime.three:after {
+    height: 120px;
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .logo-container .home-anime.two, .logo-container .two.home-anime.three:after {
+    bottom: 6vh;
+    right: 5vw;
+  }
+}
+.logo-container .home-anime.three, .logo-container .three.home-anime:after {
+  height: 100px;
+  width: 100px;
+  top: 20vh;
+  right: 25vw;
+  animation-iteration-count: infinite;
+  animation-name: expand;
+  animation-duration: 2s;
+}
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.98;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .logo-container .home-anime.three, .logo-container .three.home-anime:after {
+    height: 80px;
+    width: 80px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .logo-container .home-anime.three, .logo-container .three.home-anime:after {
+    right: 10vw;
+  }
+}
+.logo-container .home-anime.three:after {
+  content: "";
+  display: block;
+  height: 60px;
+  width: 60px;
+  top: 5px;
+  left: -45px;
+  animation-iteration-count: infinite;
+  animation-name: expand;
+  animation-duration: 2s;
+}
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.98;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .logo-container .home-anime.three:after {
+    height: 50px;
+    width: 50px;
+    left: -35px;
+  }
+}
+.logo-container .home-anime.four, .logo-container .four.home-anime.three:after {
+  height: 60px;
+  width: 60px;
+  bottom: 30vh;
+  right: 45vw;
+  animation-iteration-count: infinite;
+  animation-name: expand;
+  animation-duration: 2s;
+}
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.98;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .logo-container .home-anime.four, .logo-container .four.home-anime.three:after {
+    height: 50px;
+    width: 50px;
+  }
+}
+.logo-container .home-anime.five, .logo-container .five.home-anime.three:after {
+  height: 90px;
+  width: 90px;
+  bottom: 10vh;
+  left: 10vw;
+  animation-iteration-count: infinite;
+  animation-name: expand;
+  animation-duration: 2s;
+}
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.98;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .logo-container .home-anime.five, .logo-container .five.home-anime.three:after {
+    height: 75px;
+    width: 75px;
+  }
 }
 .logo-container h1 {
   font-size: 40px;
@@ -870,12 +1098,20 @@ header {
   text-decoration: none;
   color: rgb(5, 20, 35);
 }
+.logo-container h1 a:hover {
+  color: black;
+}
 
 .get-started_section {
   padding: 40px 0;
   background: linear-gradient(to bottom, rgba(20, 205, 205, 0.142), #F0FFF3);
   border-bottom: 2px solid rgba(20, 205, 205, 0.142);
   color: rgb(5, 20, 35);
+}
+@media only screen and (min-width: 992px) {
+  .get-started_section {
+    padding: 60px 0;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .get-started_section {
@@ -1017,13 +1253,13 @@ header {
 }
 @media only screen and (min-width: 992px) {
   .other-feature-container .other-features {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     padding: 10px 80px 20px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .other-feature-container .other-features {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
     padding: 40px 80px 50px;
   }
 }
@@ -1123,27 +1359,32 @@ footer {
   align-items: center;
   padding: 30px;
 }
-.socials div {
+.socials a {
   width: 35px;
   height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   border-radius: 50%;
   background-color: rgb(5, 20, 35);
+  transition: 0.2s;
+}
+.socials a:hover {
+  background-color: rgb(4, 189, 251);
 }
 @media only screen and (min-width: 992px) {
-  .socials div {
+  .socials a {
     width: 40px;
     height: 40px;
   }
 }
-.socials div i {
+.socials a i {
   color: #F0FFF3;
   font-size: 16px;
 }
 @media only screen and (min-width: 992px) {
-  .socials div i {
+  .socials a i {
     font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */

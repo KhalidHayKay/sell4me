@@ -11,6 +11,7 @@
 // $secondary-color: rgb(20, 205, 205);
 $primary-color: #F0FFF3;
 $secondary-color: rgb(5, 20, 35);
+$hover-color: rgb(4, 189, 251);
 
 @mixin transition {
     transition: all 0.5s ease-in-out;
@@ -53,5 +54,25 @@ $secondary-color: rgb(5, 20, 35);
 @mixin mediaQuery($widthOrHeight, $screenSize) {
     @media only screen and ($widthOrHeight: $screenSize){
         @content;
+    }
+}
+
+
+@mixin anime{
+    animation-iteration-count: infinite;
+    animation-name: expand;
+    animation-duration: 2s;
+
+    @keyframes expand {
+        0% {
+            transform:  scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+            opacity: 0.98;
+        }
+        100% {
+            transform: scale(1);
+        }
     }
 }

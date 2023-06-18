@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="../tailwind.css">
     <title>Shop4me stock</title>
 </head>
-<body>
+<body onload="document.querySelector('.page-load-animation').style.display = 'none'">
+    <div class="page-load-animation">
+        <img src="../imgs/page-load.png" alt="">
+    </div>
     <div class="dialog">
         <dialog id="login-dialog">
             <form action="#" class="signup_or_login">
@@ -63,8 +66,8 @@
         </dialog>
     </div>
 
-    <header class="top-header stock">
-        <h1><a href="../index.html">SELL4ME</a></h1>
+    <header class="top-header">
+        <h1 class="font-bold"><a href="../index.html">SELL4ME</a></h1>
         <div class="hamburger">
             <div class="hamburger-btn"></div>
         </div> 
@@ -95,11 +98,11 @@
                 <option value="gaming">Gaming</option>
             </select>
         </div>
-
+    
         
         <section class="item-category">
             <h2 class="category-title">Foot wears</h2>
-
+    
             <div class="card-container mySwiper">
                 <div class="swiper-wrapper">
                     <!-- CARDS GO HERE -->
@@ -202,12 +205,12 @@
                 </div>
                 <div class="swiper-scrollbar progress-bar"></div>
             </div>
-
+    
             <a href="#" class="load-more">SEE ALL</a>
         </section>
         <section class="item-category">
             <h2 class="category-title">Wrist watches</h2>
-
+    
             <div class="card-container mySwiper">
                 <div class="swiper-wrapper">
                     <!-- CARDS GO HERE -->
@@ -310,12 +313,12 @@
                 </div>
                 <div class="swiper-scrollbar"></div>
             </div>
-
+    
             <a href="#" class="load-more">SEE ALL</a>
         </section>
         <section class="item-category">
             <h2 class="category-title">Clothings</h2>
-
+    
             <div class="card-container mySwiper">
                 <div class="swiper-wrapper">
                     <div class="card swiper-slide">
@@ -417,12 +420,12 @@
                 </div>
                 <div class="swiper-scrollbar"></div>
             </div>
-
+    
             <a href="#" class="load-more">SEE ALL</a>
         </section>
         <section class="item-category">
             <h2 class="category-title">Appliances</h2>
-
+    
             <div class="card-container mySwiper">
                 <div class="swiper-wrapper">
                     <!-- CARDS GO HERE -->
@@ -493,12 +496,12 @@
                 </div>
                 <div class="swiper-scrollbar"></div>
             </div>
-
+    
             <a href="#" class="load-more">SEE ALL</a>
         </section>
         <section class="item-category">
             <h2 class="category-title">Gaming</h2>
-
+    
             <div class="card-container mySwiper">
                 <div class="swiper-wrapper">
                     <!-- CARDS GO HERE -->
@@ -585,7 +588,7 @@
                 </div>
                 <div class="swiper-scrollbar"></div>
             </div>
-
+    
             <a href="#" class="load-more">SEE ALL</a>
         </section>
     </main>
@@ -593,9 +596,9 @@
     <footer>
         <div class="borderline"></div>
         <div class="socials">
-            <div><i class="fa-brands fa-facebook-f"></i></div>
-            <div><i class="fa-brands fa-twitter"></i></div>
-            <div><i class="fa-brands fa-tiktok"></i></div>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
         </div>
     </footer>
 

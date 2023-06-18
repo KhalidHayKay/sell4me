@@ -1,22 +1,19 @@
 .review-section {
-    padding-top: 50px;
+    padding-top: 100px;
     height: fit-content;
     background: linear-gradient(
         to bottom, 
         $primary-color, 
         rgba(20, 205, 205, 0.3
     ));
-    @include mediaQuery(min-width, 1200px){
-        padding-top: 100px;
-    }
 }
 
 .testimonial-container {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 
     h2 {
         color: $secondary-color;
@@ -138,6 +135,7 @@
     transition: 0.2s;
     &:hover {
         background-color: black;
+        color: $hover-color;
     }
     @include mediaQuery(min-width, 992px){
         display: flex;
@@ -190,5 +188,9 @@
         color: $secondary-color;
         font-size: 25px;
         padding: 3px 12px;
+        transition: 0.2s;
+        &:hover {
+            background-color: $hover-color;
+        }
     }
 }
