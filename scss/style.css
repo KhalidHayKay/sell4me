@@ -255,14 +255,14 @@ header.top-header h1 a:hover {
   background: linear-gradient(to right, rgb(4, 189, 251), rgb(4, 189, 251));
 }
 
-.page-load-animation {
+.page-preload-animation {
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.page-load-animation img {
+.page-preload-animation img {
   width: 80px;
   height: 80px;
   animation: rotate 4s linear infinite;
@@ -1295,6 +1295,7 @@ header {
 }
 .other-feature-container .other-features div p {
   font-size: 12px;
+  word-break: break-all;
 }
 @media only screen and (min-width: 600px) {
   .other-feature-container .other-features div p {

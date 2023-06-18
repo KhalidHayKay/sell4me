@@ -15,12 +15,10 @@ const loginBtn = document.querySelectorAll('.login>a')[1];
 const resetDialog = document.getElementById('reset-dialog');
 
 function scrollDeactivation(){
-    const x = window.scrollX;
-    const y = window.scrollY;
-    window.onscroll = function() {window.scrollTo(x, y);}
+    document.body.style.overflow = 'hidden';
 }
 function scrollReactivation(){
-    window.onscroll = function(){}
+    document.body.style.overflow = 'visible';
 }
 
 /////////   FOR SIGNUP MODAL

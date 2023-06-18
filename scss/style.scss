@@ -469,6 +469,7 @@ header {
             }
             p {
                 font-size: 12px;
+                word-break: break-all;
                 @include mediaQuery(min-width, 600px){
                     font-size: 17px;
                 }
