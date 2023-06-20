@@ -4,6 +4,11 @@ const menu = document.querySelector('.menu');
 hamburger.addEventListener('click', (e) => {
     hamburger.classList.toggle('animate');
     menu.classList.toggle('animate');
+    if(hamburger.classList.contains('animate')){
+        scrollDeactivation()
+    } else{
+        scrollReactivation()
+    }
 })
 
 
@@ -28,7 +33,7 @@ signupBtn.addEventListener('click', e => {
     signupDialog.show();
     scrollDeactivation()
 })
-document.querySelector('#signup-dialog button')
+document.querySelector('#signup-dialog img')
 .addEventListener('click', e => {
     signupDialog.close();
     scrollReactivation();
@@ -46,7 +51,7 @@ loginBtn.addEventListener('click', e => {
     loginDialog.show();
     scrollDeactivation();
 })
-document.querySelector('#login-dialog button')
+document.querySelector('#login-dialog img')
 .addEventListener('click', e => {
     loginDialog.close();
     scrollReactivation();
@@ -75,8 +80,6 @@ document.querySelector('#reset-dialog a')
 ////////////
 document.querySelector('.how-it-works a')
 .addEventListener('click', e => {
-    menu.classList.remove('animate');
-    hamburger.classList.remove('animate');
     signupDialog.show();
     scrollDeactivation()
 })
