@@ -209,13 +209,13 @@ header {
         border-radius: 50%;
         background-color: $secondary-color;
         position: absolute;
+        @include anime;
 
         &.one {
             height: 120px;
             width: 120px;
             top: 20vh;
             left: 15vw;
-            @include anime;
             @include mediaQuery(max-width, 992px){
                 height: 100px;
                 width: 100px;
@@ -232,7 +232,6 @@ header {
             width: 140px;
             bottom: 15vh;
             right: 10vw;
-            @include anime;
             @include mediaQuery(max-width, 992px){
                 height: 120px;
                 width: 120px;
@@ -247,7 +246,6 @@ header {
             width: 100px;
             top: 20vh;
             right: 25vw;
-            @include anime;
             @include mediaQuery(max-width, 992px){
                 height: 80px;
                 width: 80px;
@@ -263,7 +261,6 @@ header {
                 top: 5px;
                 left: -45px;
                 @extend .home-anime;
-                @include anime;
                 @include mediaQuery(max-width, 992px){
                     height: 50px;
                     width: 50px;
@@ -276,7 +273,6 @@ header {
             width: 60px;
             bottom: 30vh;
             right: 45vw;
-            @include anime;
             @include mediaQuery(max-width, 992px){
                 height: 50px;
                 width: 50px;
@@ -287,7 +283,6 @@ header {
             width: 90px;
             bottom: 10vh;
             left: 10vw;
-            @include anime;
             @include mediaQuery(max-width, 992px){
                 height: 75px;
                 width: 75px;

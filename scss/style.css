@@ -193,6 +193,7 @@ header.top-header h1 a:hover {
 .contact-section input {
   width: 100%;
   background-color: transparent;
+  color: #F0FFF3;
   border: none;
   border-bottom: solid 1px #F0FFF3;
   padding: 25px 0 8px 0;
@@ -263,8 +264,8 @@ header.top-header h1 a:hover {
   justify-content: center;
 }
 .page-preload-animation img {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   animation: rotate 4s linear infinite;
 }
 @keyframes rotate {
@@ -903,12 +904,6 @@ header {
   border-radius: 50%;
   background-color: rgb(5, 20, 35);
   position: absolute;
-}
-.logo-container .home-anime.one, .logo-container .one.home-anime.three:after {
-  height: 120px;
-  width: 120px;
-  top: 20vh;
-  left: 15vw;
   animation-iteration-count: infinite;
   animation-name: expand;
   animation-duration: 2s;
@@ -924,6 +919,12 @@ header {
   100% {
     transform: scale(1);
   }
+}
+.logo-container .home-anime.one, .logo-container .one.home-anime.three:after {
+  height: 120px;
+  width: 120px;
+  top: 20vh;
+  left: 15vw;
 }
 @media only screen and (max-width: 992px) {
   .logo-container .home-anime.one, .logo-container .one.home-anime.three:after {
@@ -944,21 +945,6 @@ header {
   width: 140px;
   bottom: 15vh;
   right: 10vw;
-  animation-iteration-count: infinite;
-  animation-name: expand;
-  animation-duration: 2s;
-}
-@keyframes expand {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.98;
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 @media only screen and (max-width: 992px) {
   .logo-container .home-anime.two, .logo-container .two.home-anime.three:after {
@@ -977,21 +963,6 @@ header {
   width: 100px;
   top: 20vh;
   right: 25vw;
-  animation-iteration-count: infinite;
-  animation-name: expand;
-  animation-duration: 2s;
-}
-@keyframes expand {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.98;
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 @media only screen and (max-width: 992px) {
   .logo-container .home-anime.three, .logo-container .three.home-anime:after {
@@ -1011,21 +982,6 @@ header {
   width: 60px;
   top: 5px;
   left: -45px;
-  animation-iteration-count: infinite;
-  animation-name: expand;
-  animation-duration: 2s;
-}
-@keyframes expand {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.98;
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 @media only screen and (max-width: 992px) {
   .logo-container .home-anime.three:after {
@@ -1039,21 +995,6 @@ header {
   width: 60px;
   bottom: 30vh;
   right: 45vw;
-  animation-iteration-count: infinite;
-  animation-name: expand;
-  animation-duration: 2s;
-}
-@keyframes expand {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.98;
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 @media only screen and (max-width: 992px) {
   .logo-container .home-anime.four, .logo-container .four.home-anime.three:after {
@@ -1066,21 +1007,6 @@ header {
   width: 90px;
   bottom: 10vh;
   left: 10vw;
-  animation-iteration-count: infinite;
-  animation-name: expand;
-  animation-duration: 2s;
-}
-@keyframes expand {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.98;
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 @media only screen and (max-width: 992px) {
   .logo-container .home-anime.five, .logo-container .five.home-anime.three:after {
