@@ -12,6 +12,7 @@ dialog {
     position: relative;
     background: $secondary-color;
     color: $primary-color;
+    opacity: 0.9;
     height: 100%;
     max-width: 500px;
     width: 100%;
@@ -43,7 +44,7 @@ dialog {
         span {
             font-size: 10px;
             margin: 5px 0 0 10px;
-            color: red;
+            color: #ff1717;
             @include mediaQuery(min-width, 1200px){
                 font-size: 12px;
             }
