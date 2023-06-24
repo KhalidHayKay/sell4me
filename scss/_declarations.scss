@@ -13,6 +13,13 @@ $primary-color: #F0FFF3;
 $secondary-color: rgb(5, 20, 35);
 $hover-color: rgb(4, 189, 251);
 
+@mixin dialogWidthChange {
+    @media screen and (min-width: 500px){
+        border: solid 1px lightgray;
+        border-radius: 10px;
+    }
+}
+
 @mixin transition {
     transition: all 0.5s ease-in-out;
     @include mediaQuery(min-width, 992px){

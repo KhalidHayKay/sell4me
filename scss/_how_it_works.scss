@@ -105,6 +105,9 @@ header.top-header {
                 }
                 figcaption {
                     font-size: 12px;
+                    @include mediaQuery(min-width, 992px){
+                        font-size: 15px;
+                    }
                 }
             }
         }

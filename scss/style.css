@@ -135,6 +135,11 @@ header.top-header h1 a:hover {
 .how-it-works div ul li figcaption {
   font-size: 12px;
 }
+@media only screen and (min-width: 992px) {
+  .how-it-works div ul li figcaption {
+    font-size: 15px;
+  }
+}
 .how-it-works a {
   color: rgb(5, 20, 35);
   border: 1px solid rgb(5, 20, 35);
@@ -594,9 +599,8 @@ dialog {
 
 .signup_or_login {
   position: relative;
-  background: rgb(5, 20, 35);
-  color: #F0FFF3;
-  opacity: 0.9;
+  background: #F0FFF3;
+  color: rgb(5, 20, 35);
   height: 100%;
   max-width: 500px;
   width: 100%;
@@ -605,14 +609,35 @@ dialog {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
 }
-.signup_or_login img {
+@media screen and (min-width: 500px) {
+  .signup_or_login {
+    border: solid 1px lightgray;
+    border-radius: 10px;
+  }
+}
+.signup_or_login.sign-up {
+  gap: 20px;
+}
+.signup_or_login img.close {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 35px;
+  width: 30px;
   cursor: pointer;
+}
+.signup_or_login .dialog-detail {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  margin: -20px 0 20px;
+}
+.signup_or_login .dialog-detail img.logo {
+  width: 30px;
+}
+.signup_or_login .dialog-detail h3 {
+  color: rgb(5, 20, 35);
 }
 .signup_or_login div {
   display: flex;
@@ -635,22 +660,24 @@ dialog {
 }
 .signup_or_login div input {
   padding: 4px;
-  outline-color: rgb(5, 20, 35);
+  outline-color: #F0FFF3;
 }
 .signup_or_login input {
+  outline: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 17px;
 }
 .signup_or_login .dialog-submit {
+  width: 90%;
   padding: 5px 15px;
-  background-color: #F0FFF3;
-  color: rgb(5, 20, 35);
+  background-color: rgb(5, 20, 35);
+  color: #F0FFF3;
   cursor: pointer;
   font-weight: bold;
 }
 .signup_or_login a {
-  color: #F0FFF3;
+  color: rgb(5, 20, 35);
   text-decoration: underline;
 }
 
@@ -1279,6 +1306,11 @@ header {
   border-radius: 20px;
   padding: 5px;
   text-decoration: none;
+  transition: 0.2s;
+}
+.other-feature-container a:hover {
+  background-color: gold;
+  color: #F0FFF3;
 }
 @media only screen and (min-width: 600px) {
   .other-feature-container a {

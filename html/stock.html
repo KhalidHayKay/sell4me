@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../logo/sell4me.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../swiperjs_files/stock/swiper-bundle.min.css">
     <link rel="stylesheet" href="../scss/style.css">
     <link rel="stylesheet" href="../tailwind.css">
@@ -21,7 +21,13 @@
     <div class="dialog">
         <dialog id="login-dialog">
             <form action="#" class="signup_or_login">
-                <img src="../imgs/close-icon.png" alt="close">
+                <img src="../imgs/close-icon.png" alt="close" class="close">
+                <!-- -------------------------------------- -->
+                <div class="dialog-detail">
+                    <img src="../imgs/favicon.png" alt="logo" class="logo">
+                    <h3>login to your account</h3>
+                </div>
+                <!-- -------------------------------------- -->
                 <div>
                     <label for="email">Email</label>
                     <input type="email" name="email">
@@ -37,8 +43,14 @@
             </form>
         </dialog>
         <dialog id="signup-dialog">
-            <form action="#" class="signup_or_login">
-                <img src="../imgs/close-icon.png" alt="close">
+            <form action="#" class="signup_or_login sign-up">
+                <img src="../imgs/close-icon.png" alt="close" class="close">
+                <!-- -------------------------------------- -->
+                <div class="dialog-detail">
+                    <img src="../imgs/favicon.png" alt="logo" class="logo">
+                    <h3>Sign in to your account</h3>
+                </div>
+                <!-- -------------------------------------- -->
                 <div>
                     <label for="email">Email</label>
                     <input type="email" name="email">
@@ -54,11 +66,17 @@
                 </div>
                 <input type="submit" value="Sign Up" class="dialog-submit">
     
-                <p>Already have an account? <a href="#">Login</a></p>
+                <p>Already have an account? <a href="#" class="login">Login</a></p>
             </form>
         </dialog>
         <dialog id="reset-dialog">
             <form action="#" class="signup_or_login">
+                <!-- -------------------------------------- -->
+                <div class="dialog-detail">
+                    <img src="../imgs/favicon.png" alt="logo" class="logo">
+                    <h3>Sign in to your account</h3>
+                </div>
+                <!-- -------------------------------------- -->
                 <div>
                     <label for="email">Email</label>
                     <input type="email" name="email">

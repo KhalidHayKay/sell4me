@@ -10,25 +10,45 @@ dialog {
 
 .signup_or_login {
     position: relative;
-    background: $secondary-color;
-    color: $primary-color;
-    opacity: 0.9;
+    background: $primary-color;
+    color: $secondary-color;
     height: 100%;
     max-width: 500px;
+    @include dialogWidthChange;
     width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
 
-    img {
+    //////////////////////////////
+        &.sign-up {
+            gap: 20px;
+        }
+    //////////////////////////////
+
+    img.close {
         position: absolute;
         top: 10px;
         right: 10px;
-        width: 35px;
+        width: 30px;
         cursor: pointer;
+    }
+
+    .dialog-detail {
+        display: grid;
+        justify-items: center;
+        gap: 10px;
+        margin: -20px 0 20px;
+
+        img.logo {
+            width: 30px;
+        }
+        h3 {
+            color: $secondary-color;
+        }
     }
 
     div {
@@ -52,26 +72,28 @@ dialog {
 
         input {
             padding: 4px;
-            outline-color: $secondary-color;
+            outline-color: $primary-color;
         }
     }
 
     input {
+        outline: none;
         border: none;
-        border-radius: 10px;
+        border-radius: 5px;
         font-size: 17px;
     }
 
     .dialog-submit {
+        width: 90%;
         padding: 5px 15px;
-        background-color: $primary-color;
-        color: $secondary-color;
+        background-color: $secondary-color;
+        color: $primary-color;
         cursor: pointer;
         font-weight: bold;
     }
 
     a {
-        color: $primary-color;
+        color: $secondary-color;
         text-decoration: underline;
     }
 }
