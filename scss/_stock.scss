@@ -7,20 +7,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 
-    img{
-        width: 40px;
-        height: 40px;
-        animation: rotate 4s linear infinite;
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
+    .ball {
+        height: 12px;
+        width: 12px;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        transition: 0.5s;
+        animation: bounce 0.8s linear 0.1s infinite;
+        @for $i from 1 through 4{
+            &:nth-child(#{$i}){
+                animation-delay: calc($i * 0.1s);
             }
         }
         
+        @keyframes bounce {
+            0% {
+                transform: translateY(6px);
+            }
+            25% {
+                transform: translateY(3px);
+            }
+            50% {
+                transform: translateY(0px);
+            }
+            75% {
+                transform: translateY(3px);
+            }
+            100% {
+                transform: translateY(6px);
+            }
+        }
     }
 }
 
