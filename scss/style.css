@@ -277,6 +277,10 @@ header.top-header h1 a:hover {
   }
 }
 
+a {
+  cursor: pointer;
+}
+
 .items {
   padding: 80px 0 0;
   height: -moz-fit-content;
@@ -303,6 +307,14 @@ header.top-header h1 a:hover {
 }
 .search select option:nth-child(1) {
   font-size: small;
+}
+
+@media only screen and (min-width: 992px) {
+  .card-container .swiper-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .product-verification-badge {
