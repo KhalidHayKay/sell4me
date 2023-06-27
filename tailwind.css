@@ -592,24 +592,16 @@ video {
   position: absolute;
 }
 
-.relative {
-  position: relative;
-}
-
 .sticky {
   position: sticky;
 }
 
-.left-2 {
-  left: 0.5rem;
+.left-5 {
+  left: 1.25rem;
 }
 
 .top-2 {
   top: 0.5rem;
-}
-
-.left-5 {
-  left: 1.25rem;
 }
 
 .float-right {
@@ -667,10 +659,6 @@ video {
 
 .h-px {
   height: 1px;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .w-5 {
@@ -752,10 +740,6 @@ video {
   border-radius: 1.5rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -817,11 +801,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -831,24 +810,14 @@ video {
   line-height: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -859,11 +828,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -886,16 +850,17 @@ video {
   line-height: 1.75rem;
 }
 
-.leading-8 {
-  line-height: 2rem;
-}
-
 .tracking-tight {
   letter-spacing: -0.025em;
 }
 
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-gray-600 {
@@ -916,11 +881,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1165,17 +1125,19 @@ video {
 
 .load-more {
   margin-top: 0.5rem;
+  display: none;
   align-self: center;
-  border-radius: 1rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 20 35 / var(--tw-bg-opacity));
-  padding: 0.5rem;
-  font-size: 0.75rem;
-  line-height: 1rem;
+  border-radius: 0.375rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(5 20 35 / var(--tw-border-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(240 255 243 / var(--tw-text-opacity));
-  opacity: 0.95;
+  color: rgb(5 20 35 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
@@ -1184,17 +1146,49 @@ video {
 }
 
 .load-more:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(240 255 243 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(4 189 251 / var(--tw-bg-opacity));
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .load-more {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    display: block;
   }
+}
+
+.mobile-load-more {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 992px) {
+  .mobile-load-more {
+    display: none;
+  }
+}
+
+.mobile-load-more>a {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(5 20 35 / var(--tw-border-opacity));
+  padding: 0.5rem;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(5 20 35 / var(--tw-text-opacity));
+}
+
+.mobile-load-more>a:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 20 35 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(240 255 243 / var(--tw-text-opacity));
 }
 
 .hover\:bg-indigo-500:hover {
@@ -1235,28 +1229,9 @@ video {
     padding: 2.5rem;
   }
 
-  .sm\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
-  .sm\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
   .sm\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-  }
-
-  .sm\:text-center {
-    text-align: center;
-  }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
