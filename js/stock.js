@@ -7,7 +7,6 @@ var swiper = new Swiper(".mySwiper", {
         draggable: true,
     },
 });
-
 ////////////////////////////////////
 window.addEventListener('load', e => {
     const prelaodAnime = document.querySelector('.page-preload-animation');
