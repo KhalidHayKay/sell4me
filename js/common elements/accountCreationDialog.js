@@ -29,8 +29,8 @@ accountCreationDialog.innerHTML = `
 
             <p>Already have an account? <a href="#" class="login">Login</a></p>
         </form>
-        </dialog>
-        <dialog id="login-dialog">
+    </dialog>
+    <dialog id="login-dialog">
         <form action="#">
             <img src="imgs/close-icon-light.png" alt="close" class="close">
             
@@ -53,8 +53,8 @@ accountCreationDialog.innerHTML = `
             <a href="#">Forgot Password</a>
             <p>Don't have an account? <a href="#">sign up</a></p>
         </form>
-        </dialog>
-        <dialog id="forgot-password-dialog">
+    </dialog>
+    <dialog id="forgot-password-dialog">
         <form action="#">
             <div class="dialog-header">
                 <h1>SELL4ME</h1>

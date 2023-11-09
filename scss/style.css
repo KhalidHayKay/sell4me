@@ -608,10 +608,10 @@ dialog form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 dialog form.sign-up {
-  gap: 15px;
+  gap: 10px;
 }
 @media only screen and (min-width: 500px) {
   dialog form {
@@ -696,7 +696,7 @@ dialog form input {
 dialog form input[type=submit] {
   width: 50%;
   padding: 5px 10px;
-  margin-top: 15px;
+  margin: 15px 0;
   background-color: #F0FFF3;
   color: rgb(5, 20, 35);
   cursor: pointer;
