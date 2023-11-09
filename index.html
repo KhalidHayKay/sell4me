@@ -9,77 +9,7 @@
     <title>Sell4Me</title>
 </head>
 <body>
-    <div class="dialog">
-        <dialog id="login-dialog">
-            <form action="#" class="signup_or_login">
-                <img src="imgs/close-icon.png" alt="close" class="close">
-                <!-- -------------------------------------- -->
-                <div class="dialog-detail">
-                    <img src="imgs/favicon.png" alt="logo" class="logo">
-                    <h3>login to your account</h3>
-                </div>
-                <!-- -------------------------------------- -->
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email">
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" name="password">
-                </div>
-                <input type="submit" value="Login" class="dialog-submit">
-    
-                <a href="#" class="forgot-password">Forgot Password</a>
-                <p>Don't have an account? <a href="#">sign up</a></p>
-            </form>
-        </dialog>
-        <dialog id="signup-dialog">
-            <form action="#" class="signup_or_login sign-up">
-                <img src="imgs/close-icon.png" alt="close" class="close">
-                <!-- -------------------------------------- -->
-                <div class="dialog-detail">
-                    <img src="imgs/favicon.png" alt="logo" class="logo">
-                    <h3>Sign in to your account</h3>
-                </div>
-                <!-- -------------------------------------- -->
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email">
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" name="password">
-                    <span>*password must be at least 6 caracters and must contain letter and number</span>
-                </div>
-                <div>
-                    <label for="password">Confirm password</label>
-                    <input type="password" name="password">
-                </div>
-                <input type="submit" value="Sign Up" class="dialog-submit">
-    
-                <p>Already have an account? <a href="#" class="login">Login</a></p>
-            </form>
-        </dialog>
-        <dialog id="reset-dialog">
-            <form action="#" class="signup_or_login">
-                <!-- -------------------------------------- -->
-                <div class="dialog-detail">
-                    <img src="imgs/favicon.png" alt="logo" class="logo">
-                    <h3>Sign in to your account</h3>
-                </div>
-                <!-- -------------------------------------- -->
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email">
-                </div>
-                <input type="submit" value="Reset password" class="dialog-submit">
-    
-                <a href="#">&larr; Login with new passward</a>
-            </form>
-        </dialog>
-    </div>
-    
-    <main>
+    <main class="top-header">
         <header>
             <a href="#get-started" class="get-started">Get started</a>
             <div class="hamburger">
@@ -88,10 +18,10 @@
             <nav class="menu">
                 <div class="anchor">
                     <a href="#" class="active">Home</a>
-                    <a href="html/how_it_works.html">How it Works</a>
-                    <a href="html/stock.html">View Stocks</a>
-                    <a href="html/reviews.html">Reviews</a>
-                    <a href="html/contact_us.html">Contact Us</a> 
+                    <a href="how_it_works.html">How it Works</a>
+                    <a href="stock.html">View Stocks</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="contact_us.html">Contact Us</a> 
                 </div>
                 
                 <div class="login">
@@ -107,6 +37,7 @@
             <div class="home-anime three"></div>
             <div class="home-anime four"></div>
             <div class="home-anime five"></div>
+
             <h1><a href="#">SELL4ME</a></h1>
         </div>
     </main>
@@ -187,34 +118,13 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat deleniti pariatur reiciendis saepe placeat consectetur adipisicing elit. Quaerat deleniti pariatur reiciendis.</p>
                 </div>
             </div>
-            <a href="html/pro-billing.html" id="pro">Go pro</a>
+            <a href="pro-billing.html" id="pro">Go pro</a>
         </div>
     </section>
 
-    <footer>
-        <div class="sponsors">
-            <img src="sponsors_logo/sponsor_1.png" width="100px" alt="sponsors">
-            <img src="sponsors_logo/sponsor_2.png" width="100px" alt="sponsors">
-            <img src="sponsors_logo/sponsor_3.png" width="100px" alt="sponsors">
-            <img src="sponsors_logo/sponsor_4.png" width="100px" alt="sponsors">
-            <img src="sponsors_logo/sponsor_5.png" width="100px" alt="sponsors">
-            <img src="sponsors_logo/sponsor_6.png" width="100px" alt="sponsors">
-            <img src="sponsors_logo/sponsor_7.png" width="100px" alt="sponsors">
-            <img src="sponsors_logo/sponsor_8.png" width="100px" alt="sponsors">
-            <img src="sponsors_logo/sponsor_9.png" width="100px" alt="sponsors">
-            <img src="sponsors_logo/sponsor_10.png" width="100px" alt="sponsors">
-            <img src="sponsors_logo/sponsor_11.png" width="100px" alt="sponsors">
-            <img src="sponsors_logo/sponsor_12.png" width="100px" alt="sponsors">
-        </div>
-        <div class="borderline"></div>
-        <div class="socials">
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-    </footer>
 
-
+    <script src="js/common elements/accountCreationDialog.js"></script>
+    <script src="js/common elements/footerWithSponsorLogos.js"></script>
     <script src="https://kit.fontawesome.com/ee554a58a8.js" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>

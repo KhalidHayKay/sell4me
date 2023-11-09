@@ -596,11 +596,10 @@ dialog {
   margin: auto;
   background-color: rgba(240, 255, 243, 0.8470588235);
 }
-
-.signup_or_login {
+dialog form {
   position: relative;
-  background: #F0FFF3;
-  color: rgb(5, 20, 35);
+  background: rgb(5, 20, 35);
+  color: #F0FFF3;
   height: 100%;
   max-width: 500px;
   width: 100%;
@@ -611,73 +610,100 @@ dialog {
   justify-content: center;
   gap: 30px;
 }
-@media screen and (min-width: 500px) {
-  .signup_or_login {
+dialog form.sign-up {
+  gap: 15px;
+}
+@media only screen and (min-width: 500px) {
+  dialog form {
+    height: 450px;
+    top: 12.5%;
     border: solid 1px lightgray;
     border-radius: 10px;
   }
 }
-.signup_or_login.sign-up {
-  gap: 20px;
+@media only screen and (max-height: 520px) {
+  dialog form {
+    top: 0;
+  }
 }
-.signup_or_login img.close {
+@media only screen and (max-height: 420px) {
+  dialog form {
+    height: 350px;
+    gap: 20px;
+  }
+  dialog form.sign-up {
+    gap: 5px;
+  }
+  dialog form .dialog-header {
+    gap: 10px;
+    margin: 0 !important;
+  }
+  dialog form .dialog-header h1 {
+    font-size: 18px;
+  }
+  dialog form .dialog-header h3 {
+    font-size: 16px;
+  }
+}
+dialog form img.close {
   position: absolute;
   top: 10px;
   right: 10px;
   width: 30px;
   cursor: pointer;
 }
-.signup_or_login .dialog-detail {
+dialog form .dialog-header {
   display: grid;
   justify-items: center;
   gap: 10px;
   margin: -20px 0 20px;
 }
-.signup_or_login .dialog-detail img.logo {
-  width: 30px;
+dialog form .dialog-header h1 {
+  cursor: pointer;
 }
-.signup_or_login .dialog-detail h3 {
-  color: rgb(5, 20, 35);
+dialog form .dialog-header h3 {
+  color: #F0FFF3;
 }
-.signup_or_login div {
+dialog form div {
   display: flex;
   flex-direction: column;
   width: 90%;
 }
-.signup_or_login div label {
+dialog form div label {
   font-size: 17px;
   margin-left: 5px;
 }
-.signup_or_login div span {
+dialog form div span {
   font-size: 10px;
-  margin: 5px 0 0 10px;
+  margin: 10px 0 0 10px;
   color: #ff1717;
 }
 @media only screen and (min-width: 1200px) {
-  .signup_or_login div span {
+  dialog form div span {
     font-size: 12px;
   }
 }
-.signup_or_login div input {
+dialog form div input {
   padding: 4px;
   outline-color: #F0FFF3;
 }
-.signup_or_login input {
+dialog form input {
   outline: none;
   border: none;
   border-radius: 5px;
   font-size: 17px;
 }
-.signup_or_login .dialog-submit {
-  width: 90%;
-  padding: 5px 15px;
-  background-color: rgb(5, 20, 35);
-  color: #F0FFF3;
+dialog form input[type=submit] {
+  width: 50%;
+  padding: 5px 10px;
+  margin-top: 15px;
+  background-color: #F0FFF3;
+  color: rgb(5, 20, 35);
   cursor: pointer;
   font-weight: bold;
 }
-.signup_or_login a {
-  color: rgb(5, 20, 35);
+dialog form a {
+  color: #F0FFF3;
   text-decoration: underline;
 }
 

@@ -6,94 +6,118 @@ dialog {
     border: none;
     margin: auto;
     background-color: #f0fff3d8;
-}
 
-.signup_or_login {
-    position: relative;
-    background: $primary-color;
-    color: $secondary-color;
-    height: 100%;
-    max-width: 500px;
-    @include dialogWidthChange;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-
-    //////////////////////////////
-        &.sign-up {
-            gap: 20px;
-        }
-    //////////////////////////////
-
-    img.close {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 30px;
-        cursor: pointer;
-    }
-
-    .dialog-detail {
-        display: grid;
-        justify-items: center;
-        gap: 10px;
-        margin: -20px 0 20px;
-
-        img.logo {
-            width: 30px;
-        }
-        h3 {
-            color: $secondary-color;
-        }
-    }
-
-    div {
+    form {
+        position: relative;
+        background: $secondary-color;
+        color: $primary-color;
+        height: 100%;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
         display: flex;
         flex-direction: column;
-        width: 90%;
-
-        label {
-            font-size: 17px;
-            margin-left: 5px;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        &.sign-up {
+            gap: 15px;
         }
+        @include mediaQuery(min-width, 500px){
+            height: 450px;
+            top: 12.5%;
+            border: solid 1px lightgray;
+            border-radius: 10px;
+        }
+        @include mediaQuery(max-height, 520px){
+            top: 0;
+        }
+        @include mediaQuery(max-height, 420px){
+            height: 350px;
+            gap: 20px;
+            &.sign-up {
+                gap: 5px;
+            }
+            .dialog-header {
+                gap: 10px;
+                margin: 0 !important;
 
-        span {
-            font-size: 10px;
-            margin: 5px 0 0 10px;
-            color: #ff1717;
-            @include mediaQuery(min-width, 1200px){
-                font-size: 12px;
+                h1 {
+                    font-size: 18px;
+                }
+                h3 {
+                    font-size: 16px;
+                }
             }
         }
-
-        input {
-            padding: 4px;
-            outline-color: $primary-color;
+    
+        img.close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            cursor: pointer;
         }
-    }
-
-    input {
-        outline: none;
-        border: none;
-        border-radius: 5px;
-        font-size: 17px;
-    }
-
-    .dialog-submit {
-        width: 90%;
-        padding: 5px 15px;
-        background-color: $secondary-color;
-        color: $primary-color;
-        cursor: pointer;
-        font-weight: bold;
-    }
-
-    a {
-        color: $secondary-color;
-        text-decoration: underline;
+    
+        .dialog-header {
+            display: grid;
+            justify-items: center;
+            gap: 10px;
+            margin: -20px 0 20px;
+    
+            h1 {
+                cursor: pointer;
+            }
+            h3 {
+                color: $primary-color;
+            }
+        }
+    
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+    
+            label {
+                font-size: 17px;
+                margin-left: 5px;
+            }
+    
+            span {
+                font-size: 10px;
+                margin: 10px 0 0 10px;
+                color: #ff1717;
+                @include mediaQuery(min-width, 1200px){
+                    font-size: 12px;
+                }
+            }
+    
+            input {
+                padding: 4px;
+                outline-color: $primary-color;
+            }
+        }
+    
+        input {
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+    
+        input[type=submit] {
+            width: 50%;
+            padding: 5px 10px;
+            margin-top: 15px;
+            background-color: $primary-color;
+            color: $secondary-color;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    
+        a {
+            color: $primary-color;
+            text-decoration: underline;
+        }
     }
 }

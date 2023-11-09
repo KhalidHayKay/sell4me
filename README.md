@@ -1,5 +1,5 @@
-# DEMO PROJECT
+# E-COMMERCE PROJECT
 
-This is a demo project(e-commerce) developed with HTML, CSS/SCSS, Javascript and libraries such as; Tailwind css, swiperJs.
+This is aN e-commerce project developed with HTML, CSS/SCSS and Vannila Javascript. Tailwind css, swiperJs are some of the libraries used in the development of the project.
 
-It contain a login feature which in time will be improved with backend.
+It contain a login/signup feature which in time will be improved with backend.
