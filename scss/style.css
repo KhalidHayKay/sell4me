@@ -339,6 +339,10 @@ a {
   font-size: small;
 }
 
+.card.more {
+  display: none;
+}
+
 @media only screen and (min-width: 992px) {
   .card-container .swiper-wrapper {
     display: grid;

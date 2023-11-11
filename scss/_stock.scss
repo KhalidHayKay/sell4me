@@ -42,7 +42,7 @@
     }
 }
 
-a{
+a {
     cursor: pointer;
 }
 
@@ -74,6 +74,10 @@ a{
             }
         }
     }
+}
+
+.card.more {
+    display: none;
 }
 
 .card-container .swiper-wrapper {

@@ -44,3 +44,32 @@ document.querySelector('#items')
 .addEventListener('change', e => {
     runSearch(e.target.value);
 })
+
+// See more Button
+const seeMore = () => {
+    document.querySelectorAll('div.mobile-load-more')
+    .forEach(seeMoreBtn => {
+        seeMoreBtn.addEventListener('click', e => {
+            e.preventDefault();
+
+            Array.from(seeMoreBtn.parentElement.children)
+            .forEach(card => {
+                if(card.classList.contains('more')) {
+                    card.style.display = 'block';
+                }
+            })
+        })
+    })
+}
+
+const runBySize = () => {
+    const mediaQuery = window.matchMedia('(min-width: 990px)');
+
+    if(mediaQuery.matches) {
+        seeMore();
+    }
+}
+
+runBySize();
+
+window.addEventListener('change', runBySize);
