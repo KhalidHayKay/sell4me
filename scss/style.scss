@@ -178,7 +178,8 @@ header {
         display: flex;
         gap: 15px;
 
-        a {transition: 0.2s;
+        a {
+            transition: 0.2s;
             @include login_h3style;
             &:nth-child(1) {
                 background-color: $primary-color;
@@ -189,10 +190,12 @@ header {
                 }
             }
 
-            &:hover {
-                border: 1px solid $secondary-color;
-                color: $secondary-color;
-                background-color: transparent;
+            @include mediaQuery(min-width, 992px){
+                &:hover {
+                    border: 1px solid $secondary-color;
+                    color: $secondary-color;
+                    background-color: transparent;
+                }
             }
         }   
     }

@@ -1,10 +1,10 @@
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 
-const scrollDeactivation = () => {
+const deactivateWindowScroll = () => {
     document.body.style.overflow = 'hidden';
 }
-const scrollReactivation = () => {
+const reactivateWindowScroll = () => {
     document.body.style.overflow = 'visible';
 }
 
@@ -12,9 +12,9 @@ hamburger.addEventListener('click', (e) => {
     hamburger.classList.toggle('animate');
     menu.classList.toggle('animate');
     if(hamburger.classList.contains('animate')){
-        scrollDeactivation();
+        deactivateWindowScroll();
     } else{
-        scrollReactivation();
+        reactivateWindowScroll();
     }
 })
 

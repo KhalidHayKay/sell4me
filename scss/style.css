@@ -978,10 +978,12 @@ header {
     color: #F0FFF3;
   }
 }
-.menu .login a:hover {
-  border: 1px solid rgb(5, 20, 35);
-  color: rgb(5, 20, 35);
-  background-color: transparent;
+@media only screen and (min-width: 992px) {
+  .menu .login a:hover {
+    border: 1px solid rgb(5, 20, 35);
+    color: rgb(5, 20, 35);
+    background-color: transparent;
+  }
 }
 
 .logo-container {

@@ -8,7 +8,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-// Pre-load animation
+// Page pre-load animation
 window.addEventListener('load', e => {
     const prelaodAnime = document.querySelector('.page-preload-animation');
     document.body.removeChild(prelaodAnime);
