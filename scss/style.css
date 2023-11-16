@@ -605,7 +605,7 @@ dialog form {
   background: rgb(5, 20, 35);
   color: #F0FFF3;
   height: 100%;
-  max-width: 500px;
+  max-width: 550px;
   width: 100%;
   margin: auto;
   display: flex;
@@ -623,6 +623,10 @@ dialog form.sign-up {
     top: 12.5%;
     border: solid 1px lightgray;
     border-radius: 10px;
+    gap: 10px;
+  }
+  dialog form.sign-up {
+    gap: 5px;
   }
 }
 @media only screen and (max-height: 520px) {
@@ -636,17 +640,7 @@ dialog form.sign-up {
     gap: 20px;
   }
   dialog form.sign-up {
-    gap: 5px;
-  }
-  dialog form .dialog-header {
-    gap: 10px;
-    margin: 0 !important;
-  }
-  dialog form .dialog-header h1 {
-    font-size: 18px;
-  }
-  dialog form .dialog-header h3 {
-    font-size: 16px;
+    gap: 3px;
   }
 }
 dialog form img.close {

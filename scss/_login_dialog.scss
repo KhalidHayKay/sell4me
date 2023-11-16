@@ -12,7 +12,7 @@ dialog {
         background: $secondary-color;
         color: $primary-color;
         height: 100%;
-        max-width: 500px;
+        max-width: 550px;
         width: 100%;
         margin: auto;
         display: flex;
@@ -28,6 +28,10 @@ dialog {
             top: 12.5%;
             border: solid 1px lightgray;
             border-radius: 10px;
+            gap: 10px;
+            &.sign-up {
+                gap: 5px;
+            }
         }
         @include mediaQuery(max-height, 520px){
             top: 0;
@@ -36,19 +40,19 @@ dialog {
             height: 350px;
             gap: 20px;
             &.sign-up {
-                gap: 5px;
+                gap: 3px;
             }
-            .dialog-header {
-                gap: 10px;
-                margin: 0 !important;
+            // .dialog-header {
+            //     gap: 10px;
+            //     margin: 0 !important;
 
-                h1 {
-                    font-size: 18px;
-                }
-                h3 {
-                    font-size: 16px;
-                }
-            }
+            //     h1 {
+            //         font-size: 18px;
+            //     }
+            //     h3 {
+            //         font-size: 16px;
+            //     }
+            // }
         }
     
         img.close {
